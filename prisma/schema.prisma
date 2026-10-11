@@ -1,0 +1,567 @@
+// ─────────────────────────────────────────────────────────────
+// HOSSANA · Esquema de datos
+//
+// Principio de diseño central: la unidad de trazabilidad es el
+// ENVIO (paquete), nunca el producto suelto. Los productos viven
+// dentro del envio como items, cada uno con su codigo interno.
+// Asi es estructuralmente imposible confundir productos.
+//
+// Anti-confusion, en cuatro mecanismos:
+//   1. trackingCode: secuencia global, unica, jamas reutilizada.
+//   2. Maquina de estados: ningun evento puede saltar una etapa.
+//   3. Idempotencia: claves unicas en BD, no logica condicional.
+//   4. Privacidad: tres niveles de vista (publico / autenticado / operativo).
+// ─────────────────────────────────────────────────────────────
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ═════════════════════════════════════════════════════════════
+// ENUMERACIONES
+// ═════════════════════════════════════════════════════════════
+
+enum UserRole {
+  SENDER
+  RECIPIENT
+  OPERATOR
+  COURIER
+  ADMIN
+}
+
+enum UserStatus {
+  PENDING_VERIFICATION
+  ACTIVE
+  SUSPENDED
+}
+
+enum TokenPurpose {
+  EMAIL_VERIFICATION
+  PASSWORD_RESET
+}
+
+/// Estados posibles de un envio.
+/// El orden de los grupos refleja el flujo real del proceso.
+enum ShipmentStatus {
+  // --- Fase 1: preparacion (sistema / emisor)
+  CREATED
+  CONFIRMED
+  AWAITING_PAYMENT
+
+  // --- Fase 2: recoleccion
+  AWAITING_PICKUP
+  PICKED_UP
+
+  // --- Fase 3: transito
+  IN_TRANSIT
+  AT_DISTRIBUTION_CENTER
+  OUT_FOR_DELIVERY
+
+  // --- Fase 4: cierre
+  DELIVERED
+
+  // --- Ramas de excepcion (transiciones laterales)
+  DELIVERY_ATTEMPTED
+  ON_HOLD
+  EXCEPTION
+  RETURNING
+  RETURNED
+  LOST
+  CANCELLED
+}
+
+enum EventSource {
+  SYSTEM
+  MANUAL
+  SCAN
+  COURIER_API
+  WEBHOOK
+}
+
+enum PaymentMethod {
+  ONLINE
+  ON_DELIVERY
+}
+
+enum PaymentStatus {
+  NOT_REQUIRED
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
+enum CustodyAction {
+  PICKUP
+  SCAN_IN
+  SCAN_OUT
+  HANDOFF
+  SORT
+  LOAD_VEHICLE
+  DELIVER
+  ATTEMPT_DELIVERY
+  RETURN
+}
+
+enum NotificationChannel {
+  WHATSAPP
+  EMAIL
+  SMS
+  PUSH
+  IN_APP
+}
+
+enum NotificationStatus {
+  QUEUED
+  SENDING
+  SENT
+  DELIVERED
+  FAILED
+  SKIPPED
+}
+
+enum WebhookStatus {
+  /// Recibido y validado, pendiente de procesar.
+  RECEIVED
+  /// Aplicado al menos un evento.
+  PROCESSED
+  /// Firma invalida: se registro para auditoria pero no se aplico.
+  REJECTED
+  /// Ya estaba procesado; no se hizo nada.
+  DUPLICATE
+  /// Se recibio pero ningun evento pudo aplicarse (transicion invalida).
+  FAILED
+  /// Payload legitimo pero sin estados mapeables a nuestro modelo.
+  IGNORED
+}
+
+enum OtpPurpose {
+  DELIVERY_CONFIRMATION
+  EMAIL_VERIFICATION
+  PHONE_VERIFICATION
+}
+
+// ═════════════════════════════════════════════════════════════
+// IDENTIDAD
+// ═════════════════════════════════════════════════════════════
+
+model User {
+  id           String     @id @default(uuid()) @db.Uuid
+  email        String     @unique
+  // Telefono cifrado en reposo. El hash permite buscar sin descifrar.
+  phoneCipher  String?
+  phoneHash    String?    @unique
+  passwordHash String
+  firstName    String
+  lastName     String
+  status       UserStatus @default(PENDING_VERIFICATION)
+  roles        UserRole[] @default([])
+  locale       String     @default("es")
+
+  emailVerifiedAt DateTime?
+  phoneVerifiedAt DateTime?
+  lastLoginAt     DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  refreshTokens      RefreshToken[]
+  verificationTokens VerificationToken[]
+  otpCodes           OtpCode[]
+
+  senderShipments    Shipment[]     @relation("ShipmentSender")
+  recipientShipments Shipment[]     @relation("ShipmentRecipient")
+  operatedEvents     ShipmentEvent[] @relation("EventOperator")
+  custodyRecords     CustodyRecord[]
+  auditLogs          AuditLog[]
+  notifications      Notification[]
+
+  @@index([status])
+  @@map("users")
+}
+
+/// Refresh tokens con rotacion y deteccion de reutilizacion.
+/// Si se reutiliza un token ya revocado, se revoca toda la familia
+/// (robo de credenciales).
+model RefreshToken {
+  id        String    @id @default(uuid()) @db.Uuid
+  userId    String    @db.Uuid
+  tokenHash String    @unique
+  familyId  String    @db.Uuid
+  expiresAt DateTime
+  revokedAt DateTime?
+  reason    String?
+  userAgent String?
+  ip        String?
+  createdAt DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([familyId])
+  @@map("refresh_tokens")
+}
+
+model VerificationToken {
+  id         String       @id @default(uuid()) @db.Uuid
+  userId     String       @db.Uuid
+  purpose    TokenPurpose
+  codeHash   String       @unique
+  expiresAt  DateTime
+  consumedAt DateTime?
+  createdAt  DateTime     @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, purpose])
+  @@map("verification_tokens")
+}
+
+/// OTP de confirmacion de entrega. La clave anti-fraude del sistema:
+/// lo confirma el RECEPTOR, no el repartidor.
+model OtpCode {
+  id         String     @id @default(uuid()) @db.Uuid
+  userId     String     @db.Uuid
+  shipmentId String?    @db.Uuid
+  purpose    OtpPurpose
+  codeHash   String     @unique
+  expiresAt  DateTime
+  consumedAt DateTime?
+  attempts   Int        @default(0)
+  maxAttempts Int       @default(5)
+  createdAt  DateTime   @default(now())
+
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  shipment Shipment? @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+
+  @@index([userId, purpose])
+  @@map("otp_codes")
+}
+
+// ═════════════════════════════════════════════════════════════
+// ORGANIZACION
+// ═════════════════════════════════════════════════════════════
+
+model Branch {
+  id          String   @id @default(uuid()) @db.Uuid
+  code        String   @unique
+  name        String
+  city        String
+  countryCode String   @default("BO")
+  addressLine String?
+  latitude    Decimal? @db.Decimal(9, 6)
+  longitude   Decimal? @db.Decimal(9, 6)
+  isActive    Boolean  @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  shipments          Shipment[] @relation("ShipmentOriginBranch")
+  destinationShipments Shipment[] @relation("ShipmentDestinationBranch")
+  custodyRecords     CustodyRecord[]
+
+  @@index([isActive])
+  @@map("branches")
+}
+
+// ═════════════════════════════════════════════════════════════
+// DIRECCIONES (PII cifrada en reposo)
+// ═════════════════════════════════════════════════════════════
+
+model Address {
+  id            String  @id @default(uuid()) @db.Uuid
+  label         String?
+  contactName   String
+  contactPhone  String
+  line1         String
+  line2         String?
+  city          String
+  region        String?
+  postalCode    String?
+  countryCode   String  @default("BO")
+  instructions  String?
+  latitude      Decimal? @db.Decimal(9, 6)
+  longitude     Decimal? @db.Decimal(9, 6)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  senderShipments    Shipment[] @relation("ShipmentSenderAddress")
+  recipientShipments Shipment[] @relation("ShipmentRecipientAddress")
+
+  @@map("addresses")
+}
+
+// ═════════════════════════════════════════════════════════════
+// ENVIOS
+// ═════════════════════════════════════════════════════════════
+
+model Shipment {
+  id           String         @id @default(uuid()) @db.Uuid
+  /// Codigo unico e inmutable. Formato HOS-2026-000123.
+  /// Generado por la secuencia global `shipment_code_seq`, que NUNCA se reinicia.
+  trackingCode String         @unique
+  status       ShipmentStatus @default(CREATED)
+  statusChangedAt DateTime    @default(now())
+
+  senderId    String  @db.Uuid
+  recipientId String? @db.Uuid
+
+  senderAddressId    String @db.Uuid
+  recipientAddressId String @db.Uuid
+  originBranchId     String? @db.Uuid
+  destinationBranchId String? @db.Uuid
+
+  // --- Integracion con courier
+  courierCode           String?
+  courierShipmentId     String?
+  courierTrackingNumber String?  @unique
+  courierSyncedAt       DateTime?
+  /// Ultima consulta al transportista por polling (respaldo de webhooks).
+  lastSyncedAt          DateTime?
+  /// Intentos fallidos de despacho. 3+ => requiere intervencion de admin.
+  courierSyncAttempts   Int            @default(0)
+  /// Ultimo error de comunicacion con el transportista (diagnostico).
+  lastSyncError         String?
+
+  /// Hash del token firmado que viaja dentro del QR publico.
+  /// Permite rotar el secreto sin invalidar los QR ya impresos.
+  qrTokenHash String @unique
+
+  // --- Pago
+  paymentMethod         PaymentMethod @default(ON_DELIVERY)
+  paymentStatus         PaymentStatus @default(PENDING)
+  amountCents           Int            @default(0)
+  currency              String         @default("BOB")
+  paidAt                DateTime?
+  stripePaymentIntentId String?       @unique
+
+  // --- Datos logisticos
+  weightGrams       Int?
+  volumeCm3         Int?
+  declaredValueCents Int?
+  itemCount         Int     @default(0)
+
+  estimatedDeliveryAt DateTime?
+  dispatchedAt       DateTime?
+  deliveredAt        DateTime?
+  cancelledAt        DateTime?
+  cancelReason       String?
+
+  /// Bloqueo optimista. Evita que dos operadores apliquen
+  /// transiciones concurrentes sobre el mismo envio.
+  version Int @default(1)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sender          User     @relation("ShipmentSender", fields: [senderId], references: [id])
+  recipient       User?    @relation("ShipmentRecipient", fields: [recipientId], references: [id])
+  senderAddress   Address  @relation("ShipmentSenderAddress", fields: [senderAddressId], references: [id])
+  recipientAddress Address @relation("ShipmentRecipientAddress", fields: [recipientAddressId], references: [id])
+  originBranch      Branch? @relation("ShipmentOriginBranch", fields: [originBranchId], references: [id])
+  destinationBranch Branch? @relation("ShipmentDestinationBranch", fields: [destinationBranchId], references: [id])
+
+  items         ShipmentItem[]
+  events        ShipmentEvent[]
+  custody       CustodyRecord[]
+  notifications Notification[]
+  otpCodes      OtpCode[]
+
+  @@index([status])
+  @@index([status, estimatedDeliveryAt])
+  @@index([senderId, createdAt(sort: Desc)])
+  @@index([recipientId, createdAt(sort: Desc)])
+  @@index([courierTrackingNumber])
+  @@index([courierTrackingNumber, status])
+  @@index([lastSyncedAt])
+  @@index([createdAt(sort: Desc)])
+  @@index([senderId, status])
+  @@index([recipientId, status])
+  @@map("shipments")
+}
+
+/// Productos DENTRO de un paquete. Nunca se rastrean de forma
+/// independiente: su historial vive en el envio que los contiene.
+model ShipmentItem {
+  id             String   @id @default(uuid()) @db.Uuid
+  shipmentId     String   @db.Uuid
+  /// Codigo interno del producto dentro de este envio.
+  lineCode       String
+  sku            String?
+  name           String
+  description    String?
+  quantity       Int      @default(1)
+  unitValueCents Int      @default(0)
+  weightGrams    Int?
+  isFragile      Boolean  @default(false)
+  isHazmat       Boolean  @default(false)
+
+  createdAt DateTime @default(now())
+
+  shipment Shipment @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+
+  @@unique([shipmentId, lineCode])
+  @@map("shipment_items")
+}
+
+// ═════════════════════════════════════════════════════════════
+// LINEA DE TIEMPO
+// ═════════════════════════════════════════════════════════════
+
+/// Cada fila es un hito visible en la linea de tiempo.
+/// `sequence` es monotono dentro del envio: garantiza orden total
+/// incluso si dos eventos llegan con la misma marca de tiempo.
+model ShipmentEvent {
+  id         String         @id @default(uuid()) @db.Uuid
+  shipmentId String         @db.Uuid
+  sequence   Int
+  status     ShipmentStatus
+  title      String
+  description String?
+  locationName String?
+  occurredAt DateTime
+  source     EventSource    @default(SYSTEM)
+  operatorId String?        @db.Uuid
+
+  /// Id del evento en el sistema del courier.
+  /// UNIQUE => idempotencia. Un webhook reenviado no duplica el hito.
+  courierEventId String?
+
+  /// Clave de idempotencia interna para eventos manuales repetidos.
+  idempotencyKey String?
+
+  metadata  Json?
+  createdAt DateTime @default(now())
+
+  shipment Shipment @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+  operator User?     @relation("EventOperator", fields: [operatorId], references: [id])
+
+  @@unique([shipmentId, sequence])
+  @@unique([courierEventId])
+  @@unique([idempotencyKey])
+  @@index([shipmentId, occurredAt(sort: Desc)])
+  @@index([status, occurredAt])
+  @@map("shipment_events")
+}
+
+// ═════════════════════════════════════════════════════════════
+// CADENA DE CUSTODIA
+// ═════════════════════════════════════════════════════════════
+
+/// Quien tuvo el paquete, cuando, donde y como se verifico.
+/// Es lo que permite dirimir responsabilidades si un paquete se pierde.
+model CustodyRecord {
+  id         String        @id @default(uuid()) @db.Uuid
+  shipmentId String        @db.Uuid
+  handlerId  String?       @db.Uuid
+  branchId   String?       @db.Uuid
+  action     CustodyAction
+  scanCode   String?
+  latitude   Decimal?      @db.Decimal(9, 6)
+  longitude  Decimal?      @db.Decimal(9, 6)
+  note       String?
+  occurredAt DateTime      @default(now())
+  createdAt  DateTime      @default(now())
+
+  shipment Shipment @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+  handler  User?     @relation(fields: [handlerId], references: [id])
+  branch   Branch?   @relation(fields: [branchId], references: [id])
+
+  @@index([shipmentId, occurredAt(sort: Desc)])
+  @@index([handlerId])
+  @@map("custody_records")
+}
+
+// ═════════════════════════════════════════════════════════════
+// INTEGRACIONES
+// ═════════════════════════════════════════════════════════════
+
+/// Buzon de entrada de webhooks. Guarda el payload crudo antes de
+/// procesarlo: permite auditar y reprocesar sin volver a pedir los
+/// datos al proveedor.
+model WebhookInbox {
+  id             String        @id @default(uuid()) @db.Uuid
+  provider       String
+  externalId     String?
+  eventType      String?
+  signatureValid Boolean       @default(false)
+  payload        Json
+  status         WebhookStatus @default(RECEIVED)
+  error          String?
+  attempts       Int           @default(0)
+  receivedAt     DateTime      @default(now())
+  processedAt    DateTime?
+
+  @@unique([provider, externalId])
+  @@index([status, receivedAt])
+  @@map("webhook_inbox")
+}
+
+model Notification {
+  id                String              @id @default(uuid()) @db.Uuid
+  userId            String              @db.Uuid
+  shipmentId        String?             @db.Uuid
+  channel           NotificationChannel
+  template          String
+  payload           Json
+  status            NotificationStatus  @default(QUEUED)
+  providerMessageId String?
+  error             String?
+  attempts          Int                 @default(0)
+  queuedAt          DateTime            @default(now())
+  sentAt            DateTime?
+  deliveredAt       DateTime?
+
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  shipment Shipment? @relation(fields: [shipmentId], references: [id], onDelete: Cascade)
+
+  @@index([status, queuedAt])
+  @@index([userId, queuedAt(sort: Desc)])
+  @@map("notifications")
+}
+
+/// Bitacora de seguridad. Toda lectura de datos de envio se registra.
+model AuditLog {
+  id           String   @id @default(uuid()) @db.Uuid
+  userId       String?  @db.Uuid
+  action       String
+  entity       String
+  entityId     String?
+  shipmentCode String?
+  outcome      String   @default("SUCCESS")
+  ip           String?
+  userAgent    String?
+  metadata     Json?
+  createdAt    DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([entity, entityId])
+  @@index([shipmentCode, createdAt(sort: Desc)])
+  @@index([createdAt(sort: Desc)])
+  @@map("audit_logs")
+}
+
+/// Claves de idempotencia de la API. Un POST repetido con la misma
+/// clave devuelve el resultado original en vez de duplicar la operacion.
+model IdempotencyKey {
+  key         String   @db.VarChar(120)
+  userId      String?  @db.Uuid
+  endpoint    String
+  requestHash String
+  responseCode Int?
+  responseBody Json?
+  lockedAt    DateTime @default(now())
+  completedAt DateTime?
+  expiresAt   DateTime
+
+  @@id([key, endpoint])
+  @@index([expiresAt])
+  @@map("idempotency_keys")
+}
