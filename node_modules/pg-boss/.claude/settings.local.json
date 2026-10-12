@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(for:*)",
+      "Bash(do mv \"$file\" \"$file%.js.ts\")",
+      "Bash(done)",
+      "Bash(find:*)",
+      "Bash(npm test:*)",
+      "mcp__ide__getDiagnostics",
+      "WebFetch(domain:github.com)",
+      "Bash(npm run build:*)",
+      "Bash(npm run tsc:*)",
+      "Bash(cut:*)",
+      "Bash(grep:*)",
+      "WebSearch",
+      "WebFetch(domain:docs.npmjs.com)",
+      "WebFetch(domain:ankushkun.medium.com)",
+      "WebFetch(domain:github.blog)",
+      "Bash(ls:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

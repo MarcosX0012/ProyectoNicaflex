@@ -1,0 +1,1450 @@
+2026-10-06 04:39:45.282 GMT [24480] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 04:39:45.283 GMT [24480] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 04:39:45.402 GMT [27632] LOG:  database system was shut down at 2026-10-06 04:39:35 GMT
+2026-10-06 04:39:45.414 GMT [24480] LOG:  database system is ready to accept connections
+2026-10-06 04:41:45.485 GMT [24480] LOG:  autovacuum worker (PID 10548) was terminated by exception 0xC0000142
+2026-10-06 04:41:45.485 GMT [24480] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 04:41:45.485 GMT [24480] LOG:  terminating any other active server processes
+2026-10-06 04:41:45.496 GMT [24480] LOG:  all server processes terminated; reinitializing
+2026-10-06 04:41:45.584 GMT [24480] LOG:  startup process (PID 27272) was terminated by exception 0xC0000142
+2026-10-06 04:41:45.584 GMT [24480] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 04:41:45.584 GMT [24480] LOG:  aborting startup due to startup process failure
+2026-10-06 04:41:45.585 GMT [24480] LOG:  database system is shut down
+2026-10-06 04:41:58.585 GMT [31140] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 04:41:58.586 GMT [31140] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 04:41:58.674 GMT [31664] LOG:  database system was interrupted; last known up at 2026-10-06 04:39:45 GMT
+2026-10-06 04:42:04.757 GMT [31664] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 04:42:04.757 GMT [31664] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 04:42:04.757 GMT [31664] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 04:42:31.849 GMT [31664] LOG:  syncing data directory (fsync), elapsed time: 33.17 s, current path: .
+2026-10-06 04:42:31.852 GMT [31664] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 04:42:31.862 GMT [31664] LOG:  redo starts at 0/17F1218
+2026-10-06 04:42:31.869 GMT [31664] LOG:  invalid record length at 0/1838C88: expected at least 24, got 0
+2026-10-06 04:42:31.870 GMT [31664] LOG:  redo done at 0/1838C50 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 04:42:31.876 GMT [28764] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 04:42:31.905 GMT [28764] LOG:  checkpoint complete: wrote 38 buffers (0.2%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.012 s, total=0.032 s; sync files=10, longest=0.002 s, average=0.002 s; distance=286 kB, estimate=286 kB; lsn=0/1838C88, redo lsn=0/1838C88
+2026-10-06 04:42:31.926 GMT [31140] LOG:  database system is ready to accept connections
+2026-10-06 04:43:31.995 GMT [31140] LOG:  autovacuum worker (PID 26832) was terminated by exception 0xC0000142
+2026-10-06 04:43:31.995 GMT [31140] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 04:43:31.995 GMT [31140] LOG:  terminating any other active server processes
+2026-10-06 04:43:32.011 GMT [31140] LOG:  all server processes terminated; reinitializing
+2026-10-06 04:43:32.103 GMT [31140] LOG:  startup process (PID 18864) was terminated by exception 0xC0000142
+2026-10-06 04:43:32.103 GMT [31140] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 04:43:32.103 GMT [31140] LOG:  aborting startup due to startup process failure
+2026-10-06 04:43:32.107 GMT [31140] LOG:  database system is shut down
+2026-10-06 04:44:07.287 GMT [24648] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 04:44:07.289 GMT [24648] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 04:44:07.375 GMT [13248] LOG:  database system was interrupted; last known up at 2026-10-06 04:42:31 GMT
+2026-10-06 04:44:13.450 GMT [13248] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 04:44:13.450 GMT [13248] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 04:44:13.450 GMT [13248] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 04:44:40.676 GMT [13248] LOG:  syncing data directory (fsync), elapsed time: 33.30 s, current path: .
+2026-10-06 04:44:40.679 GMT [13248] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 04:44:40.687 GMT [13248] LOG:  redo starts at 0/1838D00
+2026-10-06 04:44:40.687 GMT [13248] LOG:  invalid record length at 0/1838D38: expected at least 24, got 0
+2026-10-06 04:44:40.687 GMT [13248] LOG:  redo done at 0/1838D00 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 04:44:40.702 GMT [28584] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 04:44:40.724 GMT [28584] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.004 s, total=0.031 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1838D38, redo lsn=0/1838D38
+2026-10-06 04:44:40.742 GMT [24648] LOG:  database system is ready to accept connections
+2026-10-06 04:49:40.730 GMT [28584] LOG:  checkpoint starting: time
+2026-10-06 04:50:51.571 GMT [2644] ERROR:  relation "_prisma_migrations" does not exist at character 126
+2026-10-06 04:50:51.571 GMT [2644] STATEMENT:  SELECT "id", "checksum", "finished_at", "migration_name", "logs", "rolled_back_at", "started_at", "applied_steps_count" FROM "_prisma_migrations" ORDER BY "started_at" ASC
+2026-10-06 04:50:52.967 GMT [28584] LOG:  checkpoint complete: wrote 1985 buffers (12.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=71.649 s, sync=0.568 s, total=72.237 s; sync files=600, longest=0.006 s, average=0.001 s; distance=9447 kB, estimate=9447 kB; lsn=0/2611EC0, redo lsn=0/21729F8
+2026-10-06 04:50:53.001 GMT [28584] LOG:  checkpoint starting: immediate force wait
+2026-10-06 04:50:53.089 GMT [28584] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.029 s, total=0.089 s; sync files=2, longest=0.015 s, average=0.015 s; distance=4733 kB, estimate=8975 kB; lsn=0/2611F90, redo lsn=0/2611F38
+2026-10-06 04:50:53.762 GMT [28584] LOG:  checkpoint starting: immediate force wait
+2026-10-06 04:50:53.790 GMT [28584] LOG:  checkpoint complete: wrote 22 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.011 s, total=0.028 s; sync files=7, longest=0.004 s, average=0.002 s; distance=4870 kB, estimate=8565 kB; lsn=0/2AD3900, redo lsn=0/2AD38A8
+2026-10-06 04:55:53.794 GMT [28584] LOG:  checkpoint starting: time
+2026-10-06 04:56:08.578 GMT [28584] LOG:  checkpoint complete: wrote 133 buffers (0.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=14.610 s, sync=0.157 s, total=14.784 s; sync files=150, longest=0.003 s, average=0.002 s; distance=994 kB, estimate=7808 kB; lsn=0/2BCC200, redo lsn=0/2BCC170
+2026-10-06 05:01:52.697 GMT [28584] LOG:  checkpoint starting: immediate force wait
+2026-10-06 05:01:52.729 GMT [28584] LOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=0.006 s, sync=0.007 s, total=0.032 s; sync files=6, longest=0.002 s, average=0.002 s; distance=5347 kB, estimate=7562 kB; lsn=0/3104F48, redo lsn=0/3104EF0
+2026-10-06 05:01:53.681 GMT [28584] LOG:  checkpoint starting: immediate force wait
+2026-10-06 05:01:53.728 GMT [28584] LOG:  checkpoint complete: wrote 44 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.017 s, sync=0.018 s, total=0.048 s; sync files=17, longest=0.002 s, average=0.002 s; distance=5613 kB, estimate=7367 kB; lsn=0/3680570, redo lsn=0/3680518
+2026-10-06 05:06:53.743 GMT [28584] LOG:  checkpoint starting: time
+2026-10-06 05:06:57.538 GMT [28584] LOG:  checkpoint complete: wrote 34 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.745 s, sync=0.038 s, total=3.795 s; sync files=33, longest=0.005 s, average=0.002 s; distance=162 kB, estimate=6646 kB; lsn=0/36A8FA8, redo lsn=0/36A8F50
+2026-10-06 05:12:03.724 GMT [24648] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-10-06 05:12:03.724 GMT [24648] LOG:  performing immediate shutdown because data directory lock file is invalid
+2026-10-06 05:12:03.725 GMT [24648] LOG:  received immediate shutdown request
+2026-10-06 05:12:03.725 GMT [24648] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-10-06 05:12:03.748 GMT [24648] LOG:  database system is shut down
+2026-10-06 05:12:03.925 GMT [25940] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:12:03.926 GMT [25940] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:12:04.019 GMT [24732] LOG:  database system was interrupted; last known up at 2026-10-06 05:06:57 GMT
+2026-10-06 05:12:10.846 GMT [24732] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:12:10.846 GMT [24732] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:12:10.846 GMT [24732] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:12:38.099 GMT [24732] LOG:  syncing data directory (fsync), elapsed time: 34.07 s, current path: .
+2026-10-06 05:12:38.103 GMT [24732] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:12:38.110 GMT [24732] LOG:  redo starts at 0/36A8F50
+2026-10-06 05:12:38.110 GMT [24732] LOG:  invalid record length at 0/36A9058: expected at least 24, got 0
+2026-10-06 05:12:38.110 GMT [24732] LOG:  redo done at 0/36A9020 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:12:38.123 GMT [15404] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:12:38.146 GMT [15404] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.003 s, total=0.028 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36A9058, redo lsn=0/36A9058
+2026-10-06 05:12:38.166 GMT [25940] LOG:  database system is ready to accept connections
+2026-10-06 05:13:57.059 GMT [25940] LOG:  client backend (PID 15284) was terminated by exception 0xC0000142
+2026-10-06 05:13:57.059 GMT [25940] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:13:57.059 GMT [25940] LOG:  terminating any other active server processes
+2026-10-06 05:13:57.075 GMT [25940] LOG:  all server processes terminated; reinitializing
+2026-10-06 05:13:57.172 GMT [25940] LOG:  startup process (PID 1324) was terminated by exception 0xC0000142
+2026-10-06 05:13:57.172 GMT [25940] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:13:57.172 GMT [25940] LOG:  aborting startup due to startup process failure
+2026-10-06 05:13:57.181 GMT [25940] LOG:  database system is shut down
+2026-10-06 05:14:37.243 GMT [19404] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:14:37.245 GMT [19404] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:14:37.348 GMT [13288] LOG:  database system was interrupted; last known up at 2026-10-06 05:12:38 GMT
+2026-10-06 05:14:44.202 GMT [13288] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:14:44.202 GMT [13288] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:14:44.202 GMT [13288] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:15:11.505 GMT [13288] LOG:  syncing data directory (fsync), elapsed time: 34.15 s, current path: .
+2026-10-06 05:15:11.507 GMT [13288] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:15:11.516 GMT [13288] LOG:  redo starts at 0/36A90D0
+2026-10-06 05:15:11.516 GMT [13288] LOG:  invalid record length at 0/36A9108: expected at least 24, got 0
+2026-10-06 05:15:11.516 GMT [13288] LOG:  redo done at 0/36A90D0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:15:11.527 GMT [19772] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:15:11.550 GMT [19772] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.004 s, total=0.026 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36A9108, redo lsn=0/36A9108
+2026-10-06 05:15:11.569 GMT [19404] LOG:  database system is ready to accept connections
+2026-10-06 05:18:48.671 GMT [19404] LOG:  client backend (PID 13664) was terminated by exception 0xC0000142
+2026-10-06 05:18:48.671 GMT [19404] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:18:48.671 GMT [19404] LOG:  terminating any other active server processes
+2026-10-06 05:18:48.683 GMT [19404] LOG:  all server processes terminated; reinitializing
+2026-10-06 05:18:48.766 GMT [19404] LOG:  startup process (PID 6928) was terminated by exception 0xC0000142
+2026-10-06 05:18:48.766 GMT [19404] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:18:48.766 GMT [19404] LOG:  aborting startup due to startup process failure
+2026-10-06 05:18:48.769 GMT [19404] LOG:  database system is shut down
+2026-10-06 05:20:17.815 GMT [18480] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:20:17.816 GMT [18480] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:20:17.919 GMT [13580] LOG:  database system was interrupted; last known up at 2026-10-06 05:15:11 GMT
+2026-10-06 05:20:24.783 GMT [13580] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:20:24.783 GMT [13580] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:20:24.783 GMT [13580] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:20:51.980 GMT [13580] LOG:  syncing data directory (fsync), elapsed time: 34.05 s, current path: .
+2026-10-06 05:20:51.982 GMT [13580] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:20:51.992 GMT [13580] LOG:  redo starts at 0/36A9180
+2026-10-06 05:20:51.992 GMT [13580] LOG:  invalid record length at 0/36A91B8: expected at least 24, got 0
+2026-10-06 05:20:51.992 GMT [13580] LOG:  redo done at 0/36A9180 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:20:52.004 GMT [16868] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:20:52.022 GMT [16868] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.004 s, total=0.021 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36A91B8, redo lsn=0/36A91B8
+2026-10-06 05:20:52.039 GMT [18480] LOG:  database system is ready to accept connections
+2026-10-06 05:20:52.154 GMT [22200] FATAL:  role "HP VICTUS" does not exist
+2026-10-06 05:21:58.111 GMT [18480] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-10-06 05:21:58.111 GMT [18480] LOG:  performing immediate shutdown because data directory lock file is invalid
+2026-10-06 05:21:58.111 GMT [18480] LOG:  received immediate shutdown request
+2026-10-06 05:21:58.111 GMT [18480] LOG:  could not open file "postmaster.pid": No such file or directory
+2026-10-06 05:21:58.129 GMT [18480] LOG:  database system is shut down
+2026-10-06 05:23:27.963 GMT [6000] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:23:27.964 GMT [6000] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:23:28.058 GMT [18896] LOG:  database system was interrupted; last known up at 2026-10-06 05:20:52 GMT
+2026-10-06 05:23:34.874 GMT [18896] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:23:34.874 GMT [18896] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:23:34.874 GMT [18896] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:24:02.073 GMT [18896] LOG:  syncing data directory (fsync), elapsed time: 34.01 s, current path: .
+2026-10-06 05:24:02.075 GMT [18896] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:24:02.085 GMT [18896] LOG:  redo starts at 0/36A9230
+2026-10-06 05:24:02.092 GMT [18896] LOG:  invalid record length at 0/36AFFB0: expected at least 24, got 0
+2026-10-06 05:24:02.092 GMT [18896] LOG:  redo done at 0/36AFF78 system usage: CPU: user: 0.00 s, system: 0.01 s, elapsed: 0.00 s
+2026-10-06 05:24:02.104 GMT [13648] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:24:02.137 GMT [13648] LOG:  checkpoint complete: wrote 6 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.010 s, total=0.037 s; sync files=8, longest=0.002 s, average=0.002 s; distance=27 kB, estimate=27 kB; lsn=0/36AFFB0, redo lsn=0/36AFFB0
+2026-10-06 05:24:02.156 GMT [6000] LOG:  database system is ready to accept connections
+2026-10-06 05:26:44.754 GMT [6000] LOG:  client backend (PID 21264) was terminated by exception 0xC0000142
+2026-10-06 05:26:44.754 GMT [6000] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:26:44.754 GMT [6000] LOG:  terminating any other active server processes
+2026-10-06 05:26:44.763 GMT [6000] LOG:  all server processes terminated; reinitializing
+2026-10-06 05:26:44.839 GMT [6000] LOG:  startup process (PID 10484) was terminated by exception 0xC0000142
+2026-10-06 05:26:44.839 GMT [6000] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:26:44.839 GMT [6000] LOG:  aborting startup due to startup process failure
+2026-10-06 05:26:44.841 GMT [6000] LOG:  database system is shut down
+2026-10-06 05:27:09.327 GMT [13116] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:27:09.328 GMT [13116] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:27:09.427 GMT [4872] LOG:  database system was interrupted; last known up at 2026-10-06 05:24:02 GMT
+2026-10-06 05:27:16.251 GMT [4872] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:27:16.251 GMT [4872] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:27:16.251 GMT [4872] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:27:43.372 GMT [4872] LOG:  syncing data directory (fsync), elapsed time: 33.94 s, current path: .
+2026-10-06 05:27:43.375 GMT [4872] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:27:43.384 GMT [4872] LOG:  redo starts at 0/36B0040
+2026-10-06 05:27:43.384 GMT [4872] LOG:  invalid record length at 0/36B0078: expected at least 24, got 0
+2026-10-06 05:27:43.384 GMT [4872] LOG:  redo done at 0/36B0040 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:27:43.395 GMT [11984] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:27:43.421 GMT [11984] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.004 s, total=0.029 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36B0078, redo lsn=0/36B0078
+2026-10-06 05:27:43.440 GMT [13116] LOG:  database system is ready to accept connections
+2026-10-06 05:30:52.062 GMT [13116] LOG:  client backend (PID 23680) was terminated by exception 0xC0000142
+2026-10-06 05:30:52.062 GMT [13116] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:30:52.062 GMT [13116] LOG:  terminating any other active server processes
+2026-10-06 05:30:52.079 GMT [13116] LOG:  all server processes terminated; reinitializing
+2026-10-06 05:30:52.200 GMT [13116] LOG:  startup process (PID 25148) was terminated by exception 0xC0000142
+2026-10-06 05:30:52.200 GMT [13116] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:30:52.200 GMT [13116] LOG:  aborting startup due to startup process failure
+2026-10-06 05:30:52.202 GMT [13116] LOG:  database system is shut down
+2026-10-06 05:31:10.617 GMT [15724] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:31:10.619 GMT [15724] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:31:10.704 GMT [22368] LOG:  database system was interrupted; last known up at 2026-10-06 05:27:43 GMT
+2026-10-06 05:31:17.504 GMT [22368] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:31:17.504 GMT [22368] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:31:17.504 GMT [22368] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:31:44.750 GMT [22368] LOG:  syncing data directory (fsync), elapsed time: 34.04 s, current path: .
+2026-10-06 05:31:44.753 GMT [22368] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:31:44.763 GMT [22368] LOG:  redo starts at 0/36B00F0
+2026-10-06 05:31:44.763 GMT [22368] LOG:  invalid record length at 0/36B0128: expected at least 24, got 0
+2026-10-06 05:31:44.763 GMT [22368] LOG:  redo done at 0/36B00F0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:31:44.776 GMT [20648] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:31:44.796 GMT [20648] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.004 s, total=0.022 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36B0128, redo lsn=0/36B0128
+2026-10-06 05:31:44.812 GMT [15724] LOG:  database system is ready to accept connections
+2026-10-06 05:33:11.625 GMT [15724] LOG:  received immediate shutdown request
+2026-10-06 05:33:11.641 GMT [15724] LOG:  database system is shut down
+2026-10-06 05:33:15.553 GMT [19208] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:33:15.554 GMT [19208] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:33:15.642 GMT [13884] LOG:  database system was interrupted; last known up at 2026-10-06 05:31:44 GMT
+2026-10-06 05:33:22.480 GMT [13884] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:33:22.480 GMT [13884] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:33:22.480 GMT [13884] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:33:49.819 GMT [13884] LOG:  syncing data directory (fsync), elapsed time: 34.17 s, current path: .
+2026-10-06 05:33:49.821 GMT [13884] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:33:49.833 GMT [13884] LOG:  redo starts at 0/36B01A0
+2026-10-06 05:33:49.839 GMT [13884] LOG:  invalid record length at 0/36B3D88: expected at least 24, got 0
+2026-10-06 05:33:49.839 GMT [13884] LOG:  redo done at 0/36B3D50 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:33:49.847 GMT [22012] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:33:49.879 GMT [22012] LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.008 s, total=0.034 s; sync files=6, longest=0.002 s, average=0.002 s; distance=15 kB, estimate=15 kB; lsn=0/36B3D88, redo lsn=0/36B3D88
+2026-10-06 05:33:49.900 GMT [19208] LOG:  database system is ready to accept connections
+2026-10-06 05:36:31.001 GMT [19208] LOG:  client backend (PID 10460) was terminated by exception 0xC0000142
+2026-10-06 05:36:31.001 GMT [19208] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:36:31.001 GMT [19208] LOG:  terminating any other active server processes
+2026-10-06 05:36:31.012 GMT [19208] LOG:  all server processes terminated; reinitializing
+2026-10-06 05:36:31.096 GMT [19208] LOG:  startup process (PID 6112) was terminated by exception 0xC0000142
+2026-10-06 05:36:31.096 GMT [19208] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:36:31.096 GMT [19208] LOG:  aborting startup due to startup process failure
+2026-10-06 05:36:31.098 GMT [19208] LOG:  database system is shut down
+2026-10-06 05:36:51.091 GMT [6932] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:36:51.092 GMT [6932] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:36:51.176 GMT [14436] LOG:  database system was interrupted; last known up at 2026-10-06 05:33:49 GMT
+2026-10-06 05:36:57.977 GMT [14436] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:36:57.977 GMT [14436] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:36:57.977 GMT [14436] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:37:16.080 GMT [17688] FATAL:  the database system is starting up
+2026-10-06 05:37:16.157 GMT [29816] FATAL:  the database system is starting up
+2026-10-06 05:37:16.222 GMT [27020] FATAL:  the database system is starting up
+2026-10-06 05:37:16.279 GMT [14988] FATAL:  the database system is starting up
+2026-10-06 05:37:25.271 GMT [14436] LOG:  syncing data directory (fsync), elapsed time: 34.09 s, current path: .
+2026-10-06 05:37:25.272 GMT [14436] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:37:25.280 GMT [14436] LOG:  redo starts at 0/36B3E00
+2026-10-06 05:37:25.280 GMT [14436] LOG:  invalid record length at 0/36B3E38: expected at least 24, got 0
+2026-10-06 05:37:25.280 GMT [14436] LOG:  redo done at 0/36B3E00 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:37:25.291 GMT [3804] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:37:25.311 GMT [3804] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.005 s, total=0.023 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/36B3E38, redo lsn=0/36B3E38
+2026-10-06 05:37:25.328 GMT [6932] LOG:  database system is ready to accept connections
+2026-10-06 05:38:54.431 GMT [6932] LOG:  received fast shutdown request
+2026-10-06 05:38:54.434 GMT [6932] LOG:  aborting any active transactions
+2026-10-06 05:38:54.440 GMT [6932] LOG:  background worker "logical replication launcher" (PID 27092) exited with exit code 1
+2026-10-06 05:38:54.442 GMT [3804] LOG:  shutting down
+2026-10-06 05:38:54.444 GMT [3804] LOG:  checkpoint starting: shutdown immediate
+2026-10-06 05:38:54.460 GMT [3804] LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.004 s, total=0.018 s; sync files=4, longest=0.002 s, average=0.001 s; distance=15 kB, estimate=15 kB; lsn=0/36B7AB0, redo lsn=0/36B7AB0
+2026-10-06 05:38:54.482 GMT [6932] LOG:  database system is shut down
+2026-10-06 05:39:01.319 GMT [4616] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:39:01.321 GMT [4616] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:39:01.452 GMT [29412] LOG:  database system was shut down at 2026-10-06 05:38:54 GMT
+2026-10-06 05:39:01.470 GMT [4616] LOG:  database system is ready to accept connections
+2026-10-06 05:44:01.445 GMT [4648] LOG:  checkpoint starting: time
+2026-10-06 05:44:01.473 GMT [4648] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.004 s, total=0.029 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36B7BB8, redo lsn=0/36B7B60
+2026-10-06 05:45:16.602 GMT [4616] LOG:  client backend (PID 18456) was terminated by exception 0xC0000142
+2026-10-06 05:45:16.602 GMT [4616] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:45:16.602 GMT [4616] LOG:  terminating any other active server processes
+2026-10-06 05:45:16.615 GMT [4616] LOG:  all server processes terminated; reinitializing
+2026-10-06 05:45:16.705 GMT [4616] LOG:  startup process (PID 23280) was terminated by exception 0xC0000142
+2026-10-06 05:45:16.705 GMT [4616] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:45:16.705 GMT [4616] LOG:  aborting startup due to startup process failure
+2026-10-06 05:45:16.707 GMT [4616] LOG:  database system is shut down
+2026-10-06 05:45:16.895 GMT [20844] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:45:16.896 GMT [20844] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:45:17.015 GMT [20968] LOG:  database system was interrupted; last known up at 2026-10-06 05:44:01 GMT
+2026-10-06 05:45:23.760 GMT [20968] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:45:23.760 GMT [20968] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:45:23.760 GMT [20968] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:45:51.066 GMT [20968] LOG:  syncing data directory (fsync), elapsed time: 34.05 s, current path: .
+2026-10-06 05:45:51.072 GMT [20968] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:45:51.081 GMT [20968] LOG:  redo starts at 0/36B7B60
+2026-10-06 05:45:51.081 GMT [20968] LOG:  invalid record length at 0/36B7C68: expected at least 24, got 0
+2026-10-06 05:45:51.081 GMT [20968] LOG:  redo done at 0/36B7C30 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:45:51.092 GMT [29612] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:45:51.117 GMT [29612] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.004 s, total=0.027 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36B7C68, redo lsn=0/36B7C68
+2026-10-06 05:45:51.156 GMT [20844] LOG:  database system is ready to accept connections
+2026-10-06 05:47:54.964 GMT [20844] LOG:  client backend (PID 31656) was terminated by exception 0xC0000142
+2026-10-06 05:47:54.964 GMT [20844] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:47:54.964 GMT [20844] LOG:  terminating any other active server processes
+2026-10-06 05:47:54.976 GMT [20844] LOG:  all server processes terminated; reinitializing
+2026-10-06 05:47:55.067 GMT [20844] LOG:  startup process (PID 17944) was terminated by exception 0xC0000142
+2026-10-06 05:47:55.067 GMT [20844] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 05:47:55.067 GMT [20844] LOG:  aborting startup due to startup process failure
+2026-10-06 05:47:55.073 GMT [20844] LOG:  database system is shut down
+2026-10-06 05:50:37.734 GMT [31580] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:50:37.735 GMT [31580] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:50:37.835 GMT [22376] LOG:  database system was interrupted; last known up at 2026-10-06 05:45:51 GMT
+2026-10-06 05:50:44.742 GMT [22376] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 05:50:44.742 GMT [22376] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 05:50:44.742 GMT [22376] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 05:51:12.102 GMT [22376] LOG:  syncing data directory (fsync), elapsed time: 34.26 s, current path: .
+2026-10-06 05:51:12.104 GMT [22376] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 05:51:12.114 GMT [22376] LOG:  redo starts at 0/36B7CE0
+2026-10-06 05:51:12.114 GMT [22376] LOG:  invalid record length at 0/36B7D18: expected at least 24, got 0
+2026-10-06 05:51:12.114 GMT [22376] LOG:  redo done at 0/36B7CE0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 05:51:12.124 GMT [15980] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 05:51:12.145 GMT [15980] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.004 s, total=0.023 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36B7D18, redo lsn=0/36B7D18
+2026-10-06 05:51:12.169 GMT [31580] LOG:  database system is ready to accept connections
+2026-10-06 05:52:53.577 GMT [31580] LOG:  received fast shutdown request
+2026-10-06 05:52:53.582 GMT [31580] LOG:  aborting any active transactions
+2026-10-06 05:52:53.589 GMT [31580] LOG:  background worker "logical replication launcher" (PID 13116) exited with exit code 1
+2026-10-06 05:52:53.589 GMT [15980] LOG:  shutting down
+2026-10-06 05:52:53.591 GMT [15980] LOG:  checkpoint starting: shutdown immediate
+2026-10-06 05:52:53.605 GMT [15980] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.016 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/36B7DC8, redo lsn=0/36B7DC8
+2026-10-06 05:52:53.624 GMT [31580] LOG:  database system is shut down
+2026-10-06 05:53:32.698 GMT [28200] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 05:53:32.699 GMT [28200] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 05:53:32.888 GMT [30448] LOG:  database system was shut down at 2026-10-06 05:52:53 GMT
+2026-10-06 05:53:32.903 GMT [28200] LOG:  database system is ready to accept connections
+2026-10-06 05:58:32.777 GMT [15588] LOG:  checkpoint starting: time
+2026-10-06 05:58:32.801 GMT [15588] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.005 s, total=0.024 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/36B7ED0, redo lsn=0/36B7E78
+2026-10-06 06:00:32.278 GMT [28200] LOG:  received immediate shutdown request
+2026-10-06 06:00:32.296 GMT [28200] LOG:  database system is shut down
+2026-10-06 06:21:17.955 GMT [17956] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-06 06:21:17.956 GMT [17956] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-06 06:21:18.043 GMT [14436] LOG:  database system was interrupted; last known up at 2026-10-06 05:58:32 GMT
+2026-10-06 06:21:18.267 GMT [18784] FATAL:  the database system is starting up
+2026-10-06 06:21:20.358 GMT [13132] FATAL:  the database system is starting up
+2026-10-06 06:21:22.506 GMT [28228] FATAL:  the database system is starting up
+2026-10-06 06:21:24.686 GMT [15428] FATAL:  the database system is starting up
+2026-10-06 06:21:24.933 GMT [14436] LOG:  could not open file "./server.log": sharing violation
+2026-10-06 06:21:24.933 GMT [14436] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-06 06:21:24.933 GMT [14436] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-06 06:21:26.764 GMT [31464] FATAL:  the database system is starting up
+2026-10-06 06:21:28.847 GMT [17856] FATAL:  the database system is starting up
+2026-10-06 06:21:30.941 GMT [18096] FATAL:  the database system is starting up
+2026-10-06 06:21:33.017 GMT [26264] FATAL:  the database system is starting up
+2026-10-06 06:21:35.094 GMT [25572] FATAL:  the database system is starting up
+2026-10-06 06:21:37.172 GMT [2296] FATAL:  the database system is starting up
+2026-10-06 06:21:39.265 GMT [26500] FATAL:  the database system is starting up
+2026-10-06 06:21:41.341 GMT [12172] FATAL:  the database system is starting up
+2026-10-06 06:21:43.526 GMT [16632] FATAL:  the database system is starting up
+2026-10-06 06:21:45.610 GMT [28620] FATAL:  the database system is starting up
+2026-10-06 06:21:47.694 GMT [14804] FATAL:  the database system is starting up
+2026-10-06 06:21:49.788 GMT [10712] FATAL:  the database system is starting up
+2026-10-06 06:21:51.872 GMT [15568] FATAL:  the database system is starting up
+2026-10-06 06:21:52.455 GMT [14436] LOG:  syncing data directory (fsync), elapsed time: 34.41 s, current path: .
+2026-10-06 06:21:52.457 GMT [14436] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-06 06:21:52.465 GMT [14436] LOG:  redo starts at 0/36B7E78
+2026-10-06 06:21:52.465 GMT [14436] LOG:  invalid record length at 0/36B7F80: expected at least 24, got 0
+2026-10-06 06:21:52.465 GMT [14436] LOG:  redo done at 0/36B7F48 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-06 06:21:52.481 GMT [25692] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-06 06:21:52.503 GMT [25692] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.004 s, total=0.032 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/36B7F80, redo lsn=0/36B7F80
+2026-10-06 06:21:52.520 GMT [17956] LOG:  database system is ready to accept connections
+2026-10-06 06:21:54.077 GMT [27680] ERROR:  permission denied to alter role
+2026-10-06 06:21:54.077 GMT [27680] DETAIL:  The bootstrap superuser must have the SUPERUSER attribute.
+2026-10-06 06:21:54.077 GMT [27680] STATEMENT:  ALTER ROLE hossana NOSUPERUSER NOCREATEDB NOCREATEROLE;
+2026-10-06 06:25:09.855 GMT [19256] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:25:53.878 GMT [26388] ERROR:  insert or update on table "schedule" violates foreign key constraint "schedule_name_fkey"
+2026-10-06 06:25:53.878 GMT [26388] DETAIL:  Key (name)=(courier-poll) is not present in table "queue".
+2026-10-06 06:25:53.878 GMT [26388] STATEMENT:  
+	    INSERT INTO pgboss.schedule (name, cron, timezone, data, options)
+	    VALUES ($1, $2, $3, $4, $5)
+	    ON CONFLICT (name) DO UPDATE SET
+	      cron = EXCLUDED.cron,
+	      timezone = EXCLUDED.timezone,
+	      data = EXCLUDED.data,
+	      options = EXCLUDED.options,
+	      updated_on = now()
+	  
+2026-10-06 06:25:53.885 GMT [13184] ERROR:  insert or update on table "schedule" violates foreign key constraint "schedule_name_fkey"
+2026-10-06 06:25:53.885 GMT [13184] DETAIL:  Key (name)=(courier-dispatch) is not present in table "queue".
+2026-10-06 06:25:53.885 GMT [13184] STATEMENT:  
+	    INSERT INTO pgboss.schedule (name, cron, timezone, data, options)
+	    VALUES ($1, $2, $3, $4, $5)
+	    ON CONFLICT (name) DO UPDATE SET
+	      cron = EXCLUDED.cron,
+	      timezone = EXCLUDED.timezone,
+	      data = EXCLUDED.data,
+	      options = EXCLUDED.options,
+	      updated_on = now()
+	  
+2026-10-06 06:25:53.891 GMT [24072] ERROR:  insert or update on table "schedule" violates foreign key constraint "schedule_name_fkey"
+2026-10-06 06:25:53.891 GMT [24072] DETAIL:  Key (name)=(courier-cancel) is not present in table "queue".
+2026-10-06 06:25:53.891 GMT [24072] STATEMENT:  
+	    INSERT INTO pgboss.schedule (name, cron, timezone, data, options)
+	    VALUES ($1, $2, $3, $4, $5)
+	    ON CONFLICT (name) DO UPDATE SET
+	      cron = EXCLUDED.cron,
+	      timezone = EXCLUDED.timezone,
+	      data = EXCLUDED.data,
+	      options = EXCLUDED.options,
+	      updated_on = now()
+	  
+2026-10-06 06:25:53.898 GMT [18828] ERROR:  insert or update on table "schedule" violates foreign key constraint "schedule_name_fkey"
+2026-10-06 06:25:53.898 GMT [18828] DETAIL:  Key (name)=(notification-retry) is not present in table "queue".
+2026-10-06 06:25:53.898 GMT [18828] STATEMENT:  
+	    INSERT INTO pgboss.schedule (name, cron, timezone, data, options)
+	    VALUES ($1, $2, $3, $4, $5)
+	    ON CONFLICT (name) DO UPDATE SET
+	      cron = EXCLUDED.cron,
+	      timezone = EXCLUDED.timezone,
+	      data = EXCLUDED.data,
+	      options = EXCLUDED.options,
+	      updated_on = now()
+	  
+2026-10-06 06:25:53.903 GMT [27084] ERROR:  insert or update on table "schedule" violates foreign key constraint "schedule_name_fkey"
+2026-10-06 06:25:53.903 GMT [27084] DETAIL:  Key (name)=(cleanup-tokens) is not present in table "queue".
+2026-10-06 06:25:53.903 GMT [27084] STATEMENT:  
+	    INSERT INTO pgboss.schedule (name, cron, timezone, data, options)
+	    VALUES ($1, $2, $3, $4, $5)
+	    ON CONFLICT (name) DO UPDATE SET
+	      cron = EXCLUDED.cron,
+	      timezone = EXCLUDED.timezone,
+	      data = EXCLUDED.data,
+	      options = EXCLUDED.options,
+	      updated_on = now()
+	  
+2026-10-06 06:26:23.584 GMT [15980] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:26:23.584 GMT [15980] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:26:52.511 GMT [25692] LOG:  checkpoint starting: time
+2026-10-06 06:26:53.599 GMT [7528] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:26:53.599 GMT [7528] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:27:15.303 GMT [25692] LOG:  checkpoint complete: wrote 207 buffers (1.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=22.645 s, sync=0.136 s, total=22.793 s; sync files=137, longest=0.003 s, average=0.001 s; distance=699 kB, estimate=699 kB; lsn=0/3767148, redo lsn=0/3766EF0
+2026-10-06 06:27:23.609 GMT [5592] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:27:23.609 GMT [5592] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:27:53.627 GMT [26392] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:27:53.627 GMT [26392] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:28:23.628 GMT [11708] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:28:23.628 GMT [11708] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:28:25.097 GMT [22148] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:25.098 GMT [24148] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:25.098 GMT [26592] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:25.100 GMT [5136] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:25.101 GMT [16472] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:25.101 GMT [18568] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:25.101 GMT [16432] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:25.102 GMT [11776] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:28:57.422 GMT [1776] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:28:57.422 GMT [1776] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:29:27.427 GMT [19248] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:29:27.427 GMT [19248] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:29:57.441 GMT [4476] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:29:57.441 GMT [4476] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:30:10.050 GMT [3804] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.053 GMT [5608] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.053 GMT [13164] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.053 GMT [17088] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.053 GMT [19676] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.054 GMT [1100] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.054 GMT [4244] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.054 GMT [10884] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.054 GMT [13480] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:10.054 GMT [27008] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:30:42.346 GMT [28348] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:30:42.346 GMT [28348] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:31:12.359 GMT [30644] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:31:12.359 GMT [30644] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:31:13.033 GMT [11832] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.034 GMT [9864] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.034 GMT [1696] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.034 GMT [6284] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.034 GMT [7392] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.034 GMT [15000] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.034 GMT [25220] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.036 GMT [28456] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.037 GMT [18116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.037 GMT [27992] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:13.038 GMT [19568] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-06 06:31:45.370 GMT [2608] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:31:45.370 GMT [2608] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:31:52.319 GMT [25692] LOG:  checkpoint starting: time
+2026-10-06 06:32:07.451 GMT [25692] LOG:  checkpoint complete: wrote 137 buffers (0.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=15.003 s, sync=0.116 s, total=15.133 s; sync files=107, longest=0.003 s, average=0.002 s; distance=729 kB, estimate=729 kB; lsn=0/3820248, redo lsn=0/381D390
+2026-10-06 06:32:15.383 GMT [15296] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:32:15.383 GMT [15296] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:32:45.392 GMT [14016] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:32:45.392 GMT [14016] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:33:15.404 GMT [16348] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:33:15.404 GMT [16348] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:33:45.421 GMT [12160] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:33:45.421 GMT [12160] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:34:15.437 GMT [31204] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:34:15.437 GMT [31204] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:34:45.463 GMT [14180] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:34:45.463 GMT [14180] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:35:15.471 GMT [19268] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:35:15.471 GMT [19268] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:35:45.475 GMT [16608] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:35:45.475 GMT [16608] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:36:15.483 GMT [10388] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:36:15.483 GMT [10388] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:36:45.498 GMT [26544] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:36:45.498 GMT [26544] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:36:52.459 GMT [25692] LOG:  checkpoint starting: time
+2026-10-06 06:37:00.909 GMT [25692] LOG:  checkpoint complete: wrote 76 buffers (0.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=8.372 s, sync=0.066 s, total=8.451 s; sync files=73, longest=0.004 s, average=0.001 s; distance=151 kB, estimate=671 kB; lsn=0/38433A0, redo lsn=0/3843320
+2026-10-06 06:37:15.513 GMT [21132] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:37:15.513 GMT [21132] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:37:45.526 GMT [24872] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:37:45.526 GMT [24872] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:38:15.540 GMT [18752] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:38:15.540 GMT [18752] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:38:45.550 GMT [29436] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:38:45.550 GMT [29436] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:39:15.565 GMT [16628] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:39:15.565 GMT [16628] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:39:45.568 GMT [24976] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:39:45.568 GMT [24976] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:40:15.568 GMT [10408] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:40:15.568 GMT [10408] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:40:45.569 GMT [26200] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:40:45.569 GMT [26200] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:41:15.570 GMT [21736] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:41:15.570 GMT [21736] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:41:45.583 GMT [9576] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:41:45.583 GMT [9576] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:41:52.927 GMT [25692] LOG:  checkpoint starting: time
+2026-10-06 06:41:55.142 GMT [25692] LOG:  checkpoint complete: wrote 20 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.186 s, sync=0.017 s, total=2.216 s; sync files=19, longest=0.002 s, average=0.001 s; distance=83 kB, estimate=612 kB; lsn=0/3858060, redo lsn=0/3857FF0
+2026-10-06 06:42:15.584 GMT [25216] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:42:15.584 GMT [25216] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:42:45.601 GMT [10756] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:42:45.601 GMT [10756] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:43:15.602 GMT [15036] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:43:15.602 GMT [15036] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:43:45.617 GMT [25036] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:43:45.617 GMT [25036] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:44:15.623 GMT [28148] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:44:15.623 GMT [28148] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:44:45.627 GMT [19984] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:44:45.627 GMT [19984] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:45:15.632 GMT [9624] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:45:15.632 GMT [9624] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:45:45.638 GMT [15044] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:45:45.638 GMT [15044] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:46:15.645 GMT [14392] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-06 06:46:15.645 GMT [14392] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-06 06:46:30.202 GMT [17956] LOG:  client backend (PID 24588) was terminated by exception 0x40010004
+2026-10-06 06:46:30.202 GMT [17956] DETAIL:  Failed process was running: 
+	    WITH next as (
+	      SELECT id, singleton_key, policy
+	      FROM pgboss.job
+	      WHERE name = $1
+	        AND state < 'active'
+	        AND start_after < now()
+	      ORDER BY priority desc, created_on, id
+	      LIMIT $2
+	      FOR UPDATE SKIP LOCKED
+	    ), grouped as (
+	      SELECT
+	        n.id,
+	        n.policy as grouped_policy,
+	        row_number() OVER (
+	          PARTITION BY CASE
+	            WHEN $2 > 1 AND n.policy in ('singleton', 'stately') THEN n.singleton_key -- gate singleton/stately by key per batch
+	            ELSE n.id::text
+	          END
+	        ) as row_number
+	      FROM next n
+	    )
+	    UPDATE pgboss.job j SET
+	      state = 'active',
+	      started_on = now(),
+	      retry_count = CASE WHEN started_on IS NOT NULL THEN retry_count + 1 ELSE retry_count END
+	    FROM grouped
+	    WHERE name = $1 AND j.id = grouped.id
+	      AND (
+	        (grouped.grouped_policy IN ('singleton', 'stately') AND grouped.row_number = 1) -- only one per singleton key
+	        OR COALESCE(grouped.grouped_policy, '') NO
+2026-10-06 06:46:30.202 GMT [17956] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 06:46:30.202 GMT [17956] LOG:  terminating any other active server processes
+2026-10-06 06:46:30.229 GMT [17956] LOG:  all server processes terminated; reinitializing
+2026-10-06 06:46:30.396 GMT [17956] LOG:  startup process (PID 27720) was terminated by exception 0xC000026B
+2026-10-06 06:46:30.396 GMT [17956] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-06 06:46:30.396 GMT [17956] LOG:  aborting startup due to startup process failure
+2026-10-06 06:46:30.398 GMT [17956] LOG:  database system is shut down
+2026-10-07 04:43:04.534 GMT [11384] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-07 04:43:04.535 GMT [11384] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-07 04:43:04.752 GMT [25744] FATAL:  the database system is starting up
+2026-10-07 04:43:04.753 GMT [21672] LOG:  database system was interrupted; last known up at 2026-10-06 06:41:55 GMT
+2026-10-07 04:43:06.847 GMT [25180] FATAL:  the database system is starting up
+2026-10-07 04:43:08.955 GMT [7276] FATAL:  the database system is starting up
+2026-10-07 04:43:11.034 GMT [21524] FATAL:  the database system is starting up
+2026-10-07 04:43:13.115 GMT [22328] FATAL:  the database system is starting up
+2026-10-07 04:43:15.192 GMT [6460] FATAL:  the database system is starting up
+2026-10-07 04:43:16.493 GMT [21672] LOG:  could not open file "./server.log": sharing violation
+2026-10-07 04:43:16.493 GMT [21672] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-07 04:43:16.493 GMT [21672] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-07 04:43:17.277 GMT [6556] FATAL:  the database system is starting up
+2026-10-07 04:43:19.363 GMT [20964] FATAL:  the database system is starting up
+2026-10-07 04:43:21.447 GMT [27332] FATAL:  the database system is starting up
+2026-10-07 04:43:23.531 GMT [3588] FATAL:  the database system is starting up
+2026-10-07 04:43:25.621 GMT [1120] FATAL:  the database system is starting up
+2026-10-07 04:43:27.701 GMT [12928] FATAL:  the database system is starting up
+2026-10-07 04:43:29.809 GMT [8736] FATAL:  the database system is starting up
+2026-10-07 04:43:31.888 GMT [21220] FATAL:  the database system is starting up
+2026-10-07 04:43:34.021 GMT [11796] FATAL:  the database system is starting up
+2026-10-07 04:43:36.230 GMT [24080] FATAL:  the database system is starting up
+2026-10-07 04:43:38.301 GMT [26900] FATAL:  the database system is starting up
+2026-10-07 04:43:40.388 GMT [9768] FATAL:  the database system is starting up
+2026-10-07 04:43:42.592 GMT [17124] FATAL:  the database system is starting up
+2026-10-07 04:43:43.027 GMT [21672] LOG:  syncing data directory (fsync), elapsed time: 38.27 s, current path: .
+2026-10-07 04:43:43.030 GMT [21672] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-07 04:43:43.038 GMT [21672] LOG:  redo starts at 0/3857FF0
+2026-10-07 04:43:43.061 GMT [21672] LOG:  invalid record length at 0/386F1C0: expected at least 24, got 0
+2026-10-07 04:43:43.061 GMT [21672] LOG:  redo done at 0/386F198 system usage: CPU: user: 0.00 s, system: 0.01 s, elapsed: 0.02 s
+2026-10-07 04:43:43.068 GMT [13644] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-07 04:43:43.153 GMT [13644] LOG:  checkpoint complete: wrote 19 buffers (0.1%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.017 s, sync=0.052 s, total=0.087 s; sync files=23, longest=0.013 s, average=0.003 s; distance=92 kB, estimate=92 kB; lsn=0/386F1C0, redo lsn=0/386F1C0
+2026-10-07 04:43:43.173 GMT [11384] LOG:  database system is ready to accept connections
+2026-10-07 04:43:45.128 GMT [19348] ERROR:  permission denied to alter role
+2026-10-07 04:43:45.128 GMT [19348] DETAIL:  The bootstrap superuser must have the SUPERUSER attribute.
+2026-10-07 04:43:45.128 GMT [19348] STATEMENT:  ALTER ROLE hossana NOSUPERUSER NOCREATEDB NOCREATEROLE;
+2026-10-07 04:44:48.583 GMT [24976] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:44:48.583 GMT [24976] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:45:18.592 GMT [25560] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:45:18.592 GMT [25560] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:45:48.594 GMT [2920] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:45:48.594 GMT [2920] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:46:18.601 GMT [25772] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:46:18.601 GMT [25772] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:46:48.607 GMT [23572] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:46:48.607 GMT [23572] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:47:18.621 GMT [20144] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:47:18.621 GMT [20144] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:47:48.633 GMT [15676] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:47:48.633 GMT [15676] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:48:18.645 GMT [22060] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:48:18.645 GMT [22060] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:48:43.165 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 04:48:47.476 GMT [13644] LOG:  checkpoint complete: wrote 38 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.260 s, sync=0.035 s, total=4.312 s; sync files=31, longest=0.008 s, average=0.002 s; distance=193 kB, estimate=193 kB; lsn=0/389F8E8, redo lsn=0/389F868
+2026-10-07 04:48:48.651 GMT [19696] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:48:48.651 GMT [19696] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:49:18.658 GMT [14820] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:49:18.658 GMT [14820] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:49:48.666 GMT [20068] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:49:48.666 GMT [20068] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:50:18.675 GMT [22304] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:50:18.675 GMT [22304] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:50:48.685 GMT [17084] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:50:48.685 GMT [17084] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:51:18.700 GMT [6052] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:51:18.700 GMT [6052] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:51:48.711 GMT [26584] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:51:48.711 GMT [26584] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:52:18.718 GMT [15436] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:52:18.718 GMT [15436] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:52:48.719 GMT [9908] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:52:48.719 GMT [9908] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:53:18.732 GMT [7096] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:53:18.732 GMT [7096] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:53:43.480 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 04:53:45.546 GMT [13644] LOG:  checkpoint complete: wrote 18 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.031 s, sync=0.022 s, total=2.067 s; sync files=19, longest=0.005 s, average=0.002 s; distance=96 kB, estimate=183 kB; lsn=0/38B7C30, redo lsn=0/38B7BB0
+2026-10-07 04:53:48.750 GMT [14732] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:53:48.750 GMT [14732] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:54:18.755 GMT [22508] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:54:18.755 GMT [22508] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:54:48.765 GMT [6052] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:54:48.765 GMT [6052] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:55:18.769 GMT [20608] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:55:18.769 GMT [20608] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:55:48.784 GMT [24344] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:55:48.784 GMT [24344] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:56:18.799 GMT [26124] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:56:18.799 GMT [26124] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:56:48.811 GMT [22300] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:56:48.811 GMT [22300] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:57:18.812 GMT [27120] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:57:18.812 GMT [27120] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:57:48.824 GMT [25680] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:57:48.824 GMT [25680] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:58:18.827 GMT [15996] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:58:18.827 GMT [15996] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:58:43.549 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 04:58:46.108 GMT [13644] LOG:  checkpoint complete: wrote 23 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.521 s, sync=0.024 s, total=2.560 s; sync files=20, longest=0.005 s, average=0.002 s; distance=117 kB, estimate=177 kB; lsn=0/38D5318, redo lsn=0/38D52C0
+2026-10-07 04:58:48.843 GMT [10156] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:58:48.843 GMT [10156] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:59:18.884 GMT [7844] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:59:18.884 GMT [7844] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 04:59:48.889 GMT [16748] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 04:59:48.889 GMT [16748] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:00:18.893 GMT [2968] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:00:18.893 GMT [2968] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:00:48.905 GMT [6600] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:00:48.905 GMT [6600] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:01:18.919 GMT [12804] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:01:18.919 GMT [12804] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:01:48.932 GMT [18404] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:01:48.932 GMT [18404] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:02:18.936 GMT [5128] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:02:18.936 GMT [5128] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:02:48.942 GMT [27112] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:02:48.942 GMT [27112] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:03:18.954 GMT [14360] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:03:18.954 GMT [14360] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:03:43.111 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:03:46.484 GMT [13644] LOG:  checkpoint complete: wrote 31 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.335 s, sync=0.027 s, total=3.373 s; sync files=26, longest=0.002 s, average=0.002 s; distance=126 kB, estimate=172 kB; lsn=0/38F4DD8, redo lsn=0/38F4D80
+2026-10-07 05:03:48.963 GMT [13916] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:03:48.963 GMT [13916] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:04:18.971 GMT [2944] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:04:18.971 GMT [2944] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:04:48.978 GMT [3704] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:04:48.978 GMT [3704] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:05:18.979 GMT [7200] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:05:18.979 GMT [7200] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:05:48.987 GMT [18248] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:05:48.987 GMT [18248] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:06:18.990 GMT [21868] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:06:18.990 GMT [21868] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:06:48.995 GMT [12304] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:06:48.995 GMT [12304] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:07:19.003 GMT [14924] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:07:19.003 GMT [14924] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:07:49.010 GMT [26892] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:07:49.010 GMT [26892] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:08:19.037 GMT [12336] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:08:19.037 GMT [12336] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:08:43.489 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:08:45.573 GMT [13644] LOG:  checkpoint complete: wrote 19 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.044 s, sync=0.022 s, total=2.084 s; sync files=19, longest=0.005 s, average=0.002 s; distance=111 kB, estimate=166 kB; lsn=0/3910C68, redo lsn=0/3910BE8
+2026-10-07 05:08:49.042 GMT [23912] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:08:49.042 GMT [23912] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:09:19.044 GMT [22460] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:09:19.044 GMT [22460] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:09:49.054 GMT [13588] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:09:49.054 GMT [13588] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:10:19.068 GMT [3704] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:10:19.068 GMT [3704] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:10:49.080 GMT [15060] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:10:49.080 GMT [15060] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:11:19.086 GMT [24492] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:11:19.086 GMT [24492] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:11:49.099 GMT [23196] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:11:49.099 GMT [23196] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:12:19.105 GMT [14736] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:12:19.105 GMT [14736] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:12:49.115 GMT [21452] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:12:49.115 GMT [21452] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:13:19.117 GMT [1104] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:13:19.117 GMT [1104] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:13:43.580 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:13:46.057 GMT [13644] LOG:  checkpoint complete: wrote 23 buffers (0.1%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.442 s, sync=0.022 s, total=2.478 s; sync files=21, longest=0.002 s, average=0.002 s; distance=136 kB, estimate=163 kB; lsn=0/3932EA8, redo lsn=0/3932DF0
+2026-10-07 05:13:49.119 GMT [27308] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:13:49.119 GMT [27308] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:14:19.121 GMT [9692] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:14:19.121 GMT [9692] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:14:22.038 GMT [25032] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 05:14:49.137 GMT [5260] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:14:49.137 GMT [5260] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:15:19.148 GMT [10596] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:15:19.148 GMT [10596] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:15:49.158 GMT [20144] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:15:49.158 GMT [20144] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:16:19.159 GMT [7820] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:16:19.159 GMT [7820] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:16:49.173 GMT [24168] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:16:49.173 GMT [24168] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:17:19.193 GMT [15976] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:17:19.193 GMT [15976] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:17:49.207 GMT [11820] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:17:49.207 GMT [11820] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:18:19.214 GMT [22816] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:18:19.214 GMT [22816] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:18:43.061 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:18:49.232 GMT [18012] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:18:49.232 GMT [18012] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:18:52.039 GMT [13644] LOG:  checkpoint complete: wrote 79 buffers (0.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=8.893 s, sync=0.072 s, total=8.978 s; sync files=73, longest=0.006 s, average=0.001 s; distance=338 kB, estimate=338 kB; lsn=0/3989608, redo lsn=0/39879D8
+2026-10-07 05:19:19.247 GMT [27044] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:19:19.247 GMT [27044] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:19:49.251 GMT [2360] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:19:49.251 GMT [2360] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:20:19.263 GMT [13588] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:20:19.263 GMT [13588] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:20:49.276 GMT [25800] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:20:49.276 GMT [25800] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:21:19.289 GMT [19772] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:21:19.289 GMT [19772] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:21:49.294 GMT [10980] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:21:49.294 GMT [10980] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:22:19.305 GMT [3868] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:22:19.305 GMT [3868] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:22:49.316 GMT [22212] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:22:49.316 GMT [22212] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:23:19.319 GMT [15952] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:23:19.319 GMT [15952] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:23:43.051 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:23:45.446 GMT [13644] LOG:  checkpoint complete: wrote 22 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.363 s, sync=0.024 s, total=2.396 s; sync files=19, longest=0.005 s, average=0.002 s; distance=124 kB, estimate=317 kB; lsn=0/39A6A68, redo lsn=0/39A69D8
+2026-10-07 05:23:49.320 GMT [16912] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:23:49.320 GMT [16912] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:24:19.331 GMT [10260] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:24:19.331 GMT [10260] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:24:49.336 GMT [16780] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:24:49.336 GMT [16780] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:25:19.361 GMT [16420] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:25:19.361 GMT [16420] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:25:49.376 GMT [26680] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:25:49.376 GMT [26680] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:26:19.384 GMT [25544] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:26:19.384 GMT [25544] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:26:49.399 GMT [15396] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:26:49.399 GMT [15396] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:27:19.413 GMT [12192] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:27:19.413 GMT [12192] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:27:49.415 GMT [15896] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:27:49.415 GMT [15896] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:28:19.416 GMT [3600] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:28:19.416 GMT [3600] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:28:43.460 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:28:47.660 GMT [13644] LOG:  checkpoint complete: wrote 37 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.155 s, sync=0.031 s, total=4.200 s; sync files=31, longest=0.005 s, average=0.001 s; distance=161 kB, estimate=301 kB; lsn=0/39CEFA0, redo lsn=0/39CEF48
+2026-10-07 05:28:49.419 GMT [25612] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:28:49.419 GMT [25612] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:29:19.421 GMT [1936] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:29:19.421 GMT [1936] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:29:49.423 GMT [14032] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:29:49.423 GMT [14032] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:30:19.425 GMT [22664] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:30:19.425 GMT [22664] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:30:49.434 GMT [18084] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:30:49.434 GMT [18084] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:31:19.437 GMT [25920] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:31:19.437 GMT [25920] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:31:49.440 GMT [18136] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:31:49.440 GMT [18136] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:32:19.448 GMT [4672] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:32:19.448 GMT [4672] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:32:49.458 GMT [4884] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:32:49.458 GMT [4884] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:33:19.462 GMT [11548] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:33:19.462 GMT [11548] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:33:43.669 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:33:46.075 GMT [13644] LOG:  checkpoint complete: wrote 22 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.361 s, sync=0.029 s, total=2.406 s; sync files=19, longest=0.004 s, average=0.002 s; distance=116 kB, estimate=283 kB; lsn=0/39EC200, redo lsn=0/39EC180
+2026-10-07 05:33:49.465 GMT [12884] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:33:49.465 GMT [12884] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:34:19.470 GMT [360] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:34:19.470 GMT [360] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:34:49.482 GMT [18108] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:34:49.482 GMT [18108] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:35:19.483 GMT [16820] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:35:19.483 GMT [16820] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:35:49.484 GMT [21808] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:35:49.484 GMT [21808] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:36:19.497 GMT [22676] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:36:19.497 GMT [22676] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:36:49.504 GMT [14320] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:36:49.504 GMT [14320] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:37:19.514 GMT [22240] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:37:19.514 GMT [22240] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:37:49.529 GMT [14668] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:37:49.529 GMT [14668] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:38:19.535 GMT [26164] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:38:19.535 GMT [26164] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:38:43.090 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:38:45.963 GMT [13644] LOG:  checkpoint complete: wrote 26 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.839 s, sync=0.020 s, total=2.874 s; sync files=21, longest=0.002 s, average=0.001 s; distance=149 kB, estimate=269 kB; lsn=0/3A117D0, redo lsn=0/3A11718
+2026-10-07 05:38:49.540 GMT [25240] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:38:49.540 GMT [25240] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:39:19.540 GMT [396] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:39:19.540 GMT [396] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:39:49.547 GMT [22536] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:39:49.547 GMT [22536] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:40:19.553 GMT [14320] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:40:19.553 GMT [14320] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:40:49.561 GMT [21656] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:40:49.561 GMT [21656] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:41:19.564 GMT [26260] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:41:19.564 GMT [26260] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:41:49.575 GMT [26316] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:41:49.575 GMT [26316] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:42:19.575 GMT [23752] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:42:19.575 GMT [23752] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:42:49.592 GMT [23948] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:42:49.592 GMT [23948] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:43:19.593 GMT [5584] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:43:19.593 GMT [5584] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:43:43.966 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:43:48.004 GMT [13644] LOG:  checkpoint complete: wrote 37 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.987 s, sync=0.037 s, total=4.039 s; sync files=30, longest=0.005 s, average=0.002 s; distance=159 kB, estimate=258 kB; lsn=0/3A393B8, redo lsn=0/3A39338
+2026-10-07 05:43:49.599 GMT [16620] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:43:49.599 GMT [16620] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:44:19.600 GMT [22156] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:44:19.600 GMT [22156] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:44:49.611 GMT [11216] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:44:49.611 GMT [11216] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:45:19.618 GMT [25240] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:45:19.618 GMT [25240] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:45:49.619 GMT [16220] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:45:49.619 GMT [16220] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:46:19.625 GMT [26784] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:46:19.625 GMT [26784] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:46:49.629 GMT [25208] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:46:49.629 GMT [25208] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:47:19.634 GMT [21796] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:47:19.634 GMT [21796] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:47:49.638 GMT [1216] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:47:49.638 GMT [1216] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:48:19.639 GMT [15876] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:48:19.639 GMT [15876] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:48:43.015 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:48:46.566 GMT [13644] LOG:  checkpoint complete: wrote 32 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.501 s, sync=0.036 s, total=3.552 s; sync files=21, longest=0.012 s, average=0.002 s; distance=182 kB, estimate=251 kB; lsn=0/3A66BE0, redo lsn=0/3A66B88
+2026-10-07 05:48:49.650 GMT [27124] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:48:49.650 GMT [27124] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:49:19.652 GMT [11712] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:49:19.652 GMT [11712] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:49:49.654 GMT [9960] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:49:49.654 GMT [9960] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:50:19.682 GMT [23804] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:50:19.682 GMT [23804] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:50:49.688 GMT [20904] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:50:49.688 GMT [20904] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:51:19.692 GMT [15876] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:51:19.692 GMT [15876] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:51:49.700 GMT [24080] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:51:49.700 GMT [24080] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:52:19.707 GMT [2900] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:52:19.707 GMT [2900] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:52:49.710 GMT [2096] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:52:49.710 GMT [2096] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:53:19.711 GMT [16620] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:53:19.711 GMT [16620] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:53:43.580 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:53:46.164 GMT [13644] LOG:  checkpoint complete: wrote 23 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.538 s, sync=0.030 s, total=2.584 s; sync files=19, longest=0.005 s, average=0.002 s; distance=142 kB, estimate=240 kB; lsn=0/3A8A6F0, redo lsn=0/3A8A660
+2026-10-07 05:53:49.720 GMT [16704] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:53:49.720 GMT [16704] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:54:19.731 GMT [24108] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:54:19.731 GMT [24108] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:54:49.738 GMT [22068] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:54:49.738 GMT [22068] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:55:19.745 GMT [24080] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:55:19.745 GMT [24080] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:55:49.748 GMT [25240] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:55:49.748 GMT [25240] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:56:19.761 GMT [18060] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:56:19.761 GMT [18060] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:56:49.763 GMT [25152] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:56:49.763 GMT [25152] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:57:19.784 GMT [12136] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:57:19.784 GMT [12136] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:57:49.801 GMT [14668] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:57:49.801 GMT [14668] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:58:19.802 GMT [6372] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:58:19.802 GMT [6372] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:58:43.168 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 05:58:45.995 GMT [13644] LOG:  checkpoint complete: wrote 26 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.790 s, sync=0.022 s, total=2.828 s; sync files=20, longest=0.005 s, average=0.002 s; distance=175 kB, estimate=233 kB; lsn=0/3AB6378, redo lsn=0/3AB62F8
+2026-10-07 05:58:49.814 GMT [8780] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:58:49.814 GMT [8780] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:59:19.826 GMT [8840] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:59:19.826 GMT [8840] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 05:59:49.833 GMT [1888] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 05:59:49.833 GMT [1888] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:00:19.839 GMT [19468] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:00:19.839 GMT [19468] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:00:49.846 GMT [3000] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:00:49.846 GMT [3000] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:01:19.848 GMT [22712] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:01:19.848 GMT [22712] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:01:49.862 GMT [2976] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:01:49.862 GMT [2976] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:02:19.874 GMT [17624] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:02:19.874 GMT [17624] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:02:49.889 GMT [15828] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:02:49.889 GMT [15828] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:03:19.893 GMT [22484] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:03:19.893 GMT [22484] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:03:43.998 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 06:03:46.813 GMT [13644] LOG:  checkpoint complete: wrote 26 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.774 s, sync=0.030 s, total=2.816 s; sync files=24, longest=0.002 s, average=0.002 s; distance=146 kB, estimate=225 kB; lsn=0/3ADAC00, redo lsn=0/3ADAB80
+2026-10-07 06:03:49.899 GMT [5252] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:03:49.899 GMT [5252] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:04:19.928 GMT [27060] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:04:19.928 GMT [27060] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:04:49.939 GMT [16620] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:04:49.939 GMT [16620] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:05:19.940 GMT [1632] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:05:19.940 GMT [1632] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:15:14.001 GMT [26340] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:15:14.001 GMT [26340] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:15:44.003 GMT [14092] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:15:44.003 GMT [14092] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:16:14.009 GMT [1184] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:16:14.009 GMT [1184] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:16:44.023 GMT [21576] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:16:44.023 GMT [21576] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:17:14.028 GMT [13000] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:17:14.028 GMT [13000] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:17:44.038 GMT [25928] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:17:44.038 GMT [25928] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:18:14.040 GMT [17856] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:18:14.040 GMT [17856] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:18:14.644 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 06:18:19.051 GMT [13644] LOG:  checkpoint complete: wrote 41 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.366 s, sync=0.031 s, total=4.408 s; sync files=34, longest=0.002 s, average=0.001 s; distance=216 kB, estimate=224 kB; lsn=0/3B12B70, redo lsn=0/3B10C48
+2026-10-07 06:18:44.046 GMT [2596] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:18:44.046 GMT [2596] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:19:14.060 GMT [13948] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:19:14.060 GMT [13948] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:19:44.063 GMT [13288] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:19:44.063 GMT [13288] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:20:14.066 GMT [5252] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:20:14.066 GMT [5252] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:20:44.072 GMT [1852] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:20:44.072 GMT [1852] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:21:14.076 GMT [22244] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:21:14.076 GMT [22244] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:21:44.079 GMT [6960] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:21:44.079 GMT [6960] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:22:14.092 GMT [17628] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:22:14.092 GMT [17628] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:22:44.103 GMT [26864] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:22:44.103 GMT [26864] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:23:14.065 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 06:23:14.119 GMT [2772] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:23:14.119 GMT [2772] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:23:21.331 GMT [13644] LOG:  checkpoint complete: wrote 66 buffers (0.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=7.194 s, sync=0.059 s, total=7.267 s; sync files=62, longest=0.003 s, average=0.001 s; distance=289 kB, estimate=289 kB; lsn=0/3B656F8, redo lsn=0/3B591E0
+2026-10-07 06:23:44.124 GMT [24168] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:23:44.124 GMT [24168] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:24:14.131 GMT [17476] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:24:14.131 GMT [17476] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:24:44.136 GMT [23536] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:24:44.136 GMT [23536] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:25:14.143 GMT [25708] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:25:14.143 GMT [25708] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:28:25.434 GMT [24564] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:28:25.434 GMT [24564] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:28:55.435 GMT [19588] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:28:55.435 GMT [19588] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:29:25.437 GMT [22356] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:29:25.437 GMT [22356] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:29:55.439 GMT [25792] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:29:55.439 GMT [25792] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:30:25.443 GMT [24936] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:30:25.443 GMT [24936] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:30:55.462 GMT [11888] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:30:55.462 GMT [11888] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:31:12.789 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 06:31:20.081 GMT [13644] LOG:  checkpoint complete: wrote 67 buffers (0.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=7.215 s, sync=0.063 s, total=7.293 s; sync files=62, longest=0.005 s, average=0.002 s; distance=280 kB, estimate=288 kB; lsn=0/3B9F308, redo lsn=0/3B9F288
+2026-10-07 06:31:25.469 GMT [27372] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:31:25.469 GMT [27372] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:31:55.479 GMT [10364] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:31:55.479 GMT [10364] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:32:25.487 GMT [22140] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:32:25.487 GMT [22140] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:32:55.489 GMT [6884] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:32:55.489 GMT [6884] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:33:25.499 GMT [27468] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:33:25.499 GMT [27468] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:33:55.508 GMT [25332] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:33:55.508 GMT [25332] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:34:25.511 GMT [15772] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:34:25.511 GMT [15772] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:34:55.522 GMT [16648] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:34:55.522 GMT [16648] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:35:25.525 GMT [7180] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:35:25.525 GMT [7180] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:35:55.546 GMT [22812] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:35:55.546 GMT [22812] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:36:12.085 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 06:36:19.758 GMT [13644] LOG:  checkpoint complete: wrote 71 buffers (0.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=7.597 s, sync=0.062 s, total=7.674 s; sync files=65, longest=0.002 s, average=0.001 s; distance=304 kB, estimate=304 kB; lsn=0/3BEB310, redo lsn=0/3BEB290
+2026-10-07 06:36:25.556 GMT [5508] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:36:25.556 GMT [5508] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:36:55.571 GMT [12612] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:36:55.571 GMT [12612] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:37:25.574 GMT [22444] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:37:25.574 GMT [22444] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:37:55.589 GMT [19504] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:37:55.589 GMT [19504] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:38:25.593 GMT [20748] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:38:25.593 GMT [20748] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:38:55.599 GMT [27332] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:38:55.599 GMT [27332] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:40:34.424 GMT [15588] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:40:34.424 GMT [15588] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:41:04.426 GMT [15396] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:41:04.426 GMT [15396] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:41:34.437 GMT [17280] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:41:34.437 GMT [17280] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:42:04.441 GMT [2712] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:42:04.441 GMT [2712] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:42:34.448 GMT [724] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:42:34.448 GMT [724] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:42:44.123 GMT [13644] LOG:  checkpoint starting: time
+2026-10-07 06:42:48.124 GMT [13644] LOG:  checkpoint complete: wrote 36 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.955 s, sync=0.031 s, total=4.001 s; sync files=31, longest=0.005 s, average=0.001 s; distance=194 kB, estimate=293 kB; lsn=0/3C1BD18, redo lsn=0/3C1BC60
+2026-10-07 06:43:04.464 GMT [24124] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:43:04.464 GMT [24124] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:43:34.478 GMT [17852] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:43:34.478 GMT [17852] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:44:04.480 GMT [15092] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:44:04.480 GMT [15092] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:44:34.491 GMT [22444] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 06:44:34.491 GMT [22444] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 06:44:54.881 GMT [11384] LOG:  client backend (PID 18212) was terminated by exception 0x40010004
+2026-10-07 06:44:54.881 GMT [11384] DETAIL:  Failed process was running: SELECT "public"."shipments"."id", "public"."shipments"."trackingCode", "public"."shipments"."status"::text, "public"."shipments"."courierTrackingNumber", "public"."shipments"."lastSyncedAt" FROM "public"."shipments" WHERE ("public"."shipments"."courierTrackingNumber" IS NOT NULL AND "public"."shipments"."status" IN (CAST($1::text AS "public"."ShipmentStatus"),CAST($2::text AS "public"."ShipmentStatus"),CAST($3::text AS "public"."ShipmentStatus"),CAST($4::text AS "public"."ShipmentStatus"),CAST($5::text AS "public"."ShipmentStatus"),CAST($6::text AS "public"."ShipmentStatus"),CAST($7::text AS "public"."ShipmentStatus"))) ORDER BY "public"."shipments"."lastSyncedAt"ASC NULLS FIRST LIMIT $8 OFFSET $9
+2026-10-07 06:44:54.881 GMT [11384] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-07 06:44:54.881 GMT [11384] LOG:  terminating any other active server processes
+2026-10-07 06:44:54.928 GMT [11384] LOG:  all server processes terminated; reinitializing
+2026-10-07 06:44:55.103 GMT [11384] LOG:  startup process (PID 14992) was terminated by exception 0xC000026B
+2026-10-07 06:44:55.103 GMT [11384] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-07 06:44:55.103 GMT [11384] LOG:  aborting startup due to startup process failure
+2026-10-07 06:44:55.105 GMT [11384] LOG:  database system is shut down
+2026-10-07 20:13:11.952 GMT [27480] LOG:  starting PostgreSQL 18.1 on x86_64-windows, compiled by msvc-19.44.35221, 64-bit
+2026-10-07 20:13:11.954 GMT [27480] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-07 20:13:12.047 GMT [16164] LOG:  database system was interrupted; last known up at 2026-10-07 06:42:48 GMT
+2026-10-07 20:13:12.254 GMT [8872] FATAL:  the database system is starting up
+2026-10-07 20:13:14.329 GMT [1180] FATAL:  the database system is starting up
+2026-10-07 20:13:16.401 GMT [18628] FATAL:  the database system is starting up
+2026-10-07 20:13:18.574 GMT [13796] FATAL:  the database system is starting up
+2026-10-07 20:13:20.647 GMT [12752] FATAL:  the database system is starting up
+2026-10-07 20:13:22.708 GMT [6064] FATAL:  the database system is starting up
+2026-10-07 20:13:22.882 GMT [16164] LOG:  could not open file "./server.log": sharing violation
+2026-10-07 20:13:22.882 GMT [16164] DETAIL:  Continuing to retry for 30 seconds.
+2026-10-07 20:13:22.882 GMT [16164] HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+2026-10-07 20:13:24.786 GMT [6468] FATAL:  the database system is starting up
+2026-10-07 20:13:26.866 GMT [16432] FATAL:  the database system is starting up
+2026-10-07 20:13:28.946 GMT [25796] FATAL:  the database system is starting up
+2026-10-07 20:13:31.026 GMT [16416] FATAL:  the database system is starting up
+2026-10-07 20:13:33.121 GMT [24332] FATAL:  the database system is starting up
+2026-10-07 20:13:35.192 GMT [15880] FATAL:  the database system is starting up
+2026-10-07 20:13:37.263 GMT [18788] FATAL:  the database system is starting up
+2026-10-07 20:13:39.336 GMT [17528] FATAL:  the database system is starting up
+2026-10-07 20:13:41.402 GMT [16560] FATAL:  the database system is starting up
+2026-10-07 20:13:43.482 GMT [13148] FATAL:  the database system is starting up
+2026-10-07 20:13:45.552 GMT [16168] FATAL:  the database system is starting up
+2026-10-07 20:13:47.624 GMT [11684] FATAL:  the database system is starting up
+2026-10-07 20:13:49.056 GMT [16164] LOG:  syncing data directory (fsync), elapsed time: 37.00 s, current path: .
+2026-10-07 20:13:49.062 GMT [16164] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-07 20:13:49.072 GMT [16164] LOG:  redo starts at 0/3C1BC60
+2026-10-07 20:13:49.096 GMT [16164] LOG:  invalid record length at 0/3C31AB0: expected at least 24, got 0
+2026-10-07 20:13:49.097 GMT [16164] LOG:  redo done at 0/3C31A88 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.02 s
+2026-10-07 20:13:49.108 GMT [22092] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-07 20:13:49.165 GMT [22092] LOG:  checkpoint complete: wrote 16 buffers (0.1%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.019 s, sync=0.025 s, total=0.059 s; sync files=21, longest=0.003 s, average=0.002 s; distance=87 kB, estimate=87 kB; lsn=0/3C31AB0, redo lsn=0/3C31AB0
+2026-10-07 20:13:49.184 GMT [27480] LOG:  database system is ready to accept connections
+2026-10-07 20:13:50.042 GMT [2536] ERROR:  permission denied to alter role
+2026-10-07 20:13:50.042 GMT [2536] DETAIL:  The bootstrap superuser must have the SUPERUSER attribute.
+2026-10-07 20:13:50.042 GMT [2536] STATEMENT:  ALTER ROLE hossana NOSUPERUSER NOCREATEDB NOCREATEROLE;
+2026-10-07 20:15:11.134 GMT [17956] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:15:11.134 GMT [17956] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:15:41.138 GMT [5620] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:15:41.138 GMT [5620] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:16:11.141 GMT [7668] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:16:11.141 GMT [7668] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:16:41.150 GMT [19948] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:16:41.150 GMT [19948] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:17:11.161 GMT [27472] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:17:11.161 GMT [27472] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:17:41.177 GMT [6332] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:17:41.177 GMT [6332] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:18:11.178 GMT [14552] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:18:11.178 GMT [14552] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:18:41.180 GMT [22580] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:18:41.180 GMT [22580] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:19:00.354 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:19:11.188 GMT [6392] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:19:11.188 GMT [6392] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:19:11.594 GMT [22092] LOG:  checkpoint complete: wrote 104 buffers (0.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=11.190 s, sync=0.037 s, total=11.241 s; sync files=40, longest=0.003 s, average=0.001 s; distance=763 kB, estimate=763 kB; lsn=0/3CF98E8, redo lsn=0/3CF08B8
+2026-10-07 20:19:25.161 GMT [27356] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 20:19:41.193 GMT [24136] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:19:41.193 GMT [24136] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:20:11.198 GMT [2000] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:20:11.198 GMT [2000] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:20:41.200 GMT [17668] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:20:41.200 GMT [17668] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:21:11.207 GMT [332] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:21:11.207 GMT [332] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:21:41.261 GMT [13960] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:21:41.261 GMT [13960] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:22:11.276 GMT [13512] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:22:11.276 GMT [13512] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:22:41.281 GMT [18508] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:22:41.281 GMT [18508] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:23:11.285 GMT [4660] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:23:11.285 GMT [4660] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:23:41.299 GMT [21336] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:23:41.299 GMT [21336] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:24:00.611 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:24:03.205 GMT [22092] LOG:  checkpoint complete: wrote 23 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.563 s, sync=0.021 s, total=2.595 s; sync files=20, longest=0.005 s, average=0.002 s; distance=131 kB, estimate=700 kB; lsn=0/3D11610, redo lsn=0/3D11590
+2026-10-07 20:24:11.311 GMT [18184] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:24:11.311 GMT [18184] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:24:41.312 GMT [12652] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:24:41.312 GMT [12652] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:25:11.320 GMT [22732] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:25:11.320 GMT [22732] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:25:41.331 GMT [16376] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:25:41.331 GMT [16376] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:26:11.339 GMT [19824] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:26:11.339 GMT [19824] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:26:41.344 GMT [12608] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:26:41.344 GMT [12608] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:27:11.352 GMT [2712] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:27:11.352 GMT [2712] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:27:41.356 GMT [17524] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:27:41.356 GMT [17524] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:28:11.361 GMT [27256] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:28:11.361 GMT [27256] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:28:41.363 GMT [8392] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:28:41.363 GMT [8392] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:29:00.215 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:29:02.908 GMT [22092] LOG:  checkpoint complete: wrote 25 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.662 s, sync=0.021 s, total=2.694 s; sync files=21, longest=0.003 s, average=0.001 s; distance=142 kB, estimate=644 kB; lsn=0/3D35098, redo lsn=0/3D35040
+2026-10-07 20:29:11.372 GMT [11180] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:29:11.372 GMT [11180] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:29:41.377 GMT [14376] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:29:41.377 GMT [14376] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:30:11.384 GMT [18540] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:30:11.384 GMT [18540] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:30:41.399 GMT [22428] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:30:41.399 GMT [22428] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:31:11.414 GMT [25772] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:31:11.414 GMT [25772] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:31:41.425 GMT [27632] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:31:41.425 GMT [27632] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:32:11.438 GMT [26768] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:32:11.438 GMT [26768] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:32:41.451 GMT [16116] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:32:41.451 GMT [16116] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:33:11.461 GMT [6340] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:33:11.461 GMT [6340] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:33:41.468 GMT [18800] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:33:41.468 GMT [18800] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:34:00.921 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:34:05.071 GMT [22092] LOG:  checkpoint complete: wrote 38 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.106 s, sync=0.028 s, total=4.151 s; sync files=31, longest=0.002 s, average=0.001 s; distance=164 kB, estimate=596 kB; lsn=0/3D5E298, redo lsn=0/3D5E240
+2026-10-07 20:34:11.483 GMT [26040] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:34:11.483 GMT [26040] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:34:41.487 GMT [4208] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:34:41.487 GMT [4208] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:35:11.499 GMT [7860] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:35:11.499 GMT [7860] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:35:41.511 GMT [8904] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:35:41.511 GMT [8904] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:36:11.523 GMT [5128] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:36:11.523 GMT [5128] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:36:41.538 GMT [4740] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:36:41.538 GMT [4740] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:37:11.550 GMT [2536] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:37:11.550 GMT [2536] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:37:41.566 GMT [20144] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:37:41.566 GMT [20144] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:38:11.567 GMT [20228] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:38:11.567 GMT [20228] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:38:41.569 GMT [4360] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:38:41.569 GMT [4360] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:39:00.080 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:39:02.757 GMT [22092] LOG:  checkpoint complete: wrote 24 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.644 s, sync=0.022 s, total=2.677 s; sync files=19, longest=0.005 s, average=0.002 s; distance=136 kB, estimate=550 kB; lsn=0/3D805C0, redo lsn=0/3D80540
+2026-10-07 20:39:11.571 GMT [26308] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:39:11.571 GMT [26308] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:39:41.572 GMT [9804] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:39:41.572 GMT [9804] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:40:11.586 GMT [26320] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:40:11.586 GMT [26320] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:40:41.589 GMT [8884] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:40:41.589 GMT [8884] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:41:11.603 GMT [18368] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:41:11.603 GMT [18368] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:41:41.606 GMT [20844] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:41:41.606 GMT [20844] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:42:11.624 GMT [14092] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:42:11.624 GMT [14092] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:42:41.637 GMT [17312] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:42:41.637 GMT [17312] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:43:11.651 GMT [26072] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:43:11.651 GMT [26072] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:43:41.667 GMT [2660] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:43:41.667 GMT [2660] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:44:00.756 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:44:03.849 GMT [22092] LOG:  checkpoint complete: wrote 27 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.035 s, sync=0.037 s, total=3.093 s; sync files=21, longest=0.016 s, average=0.002 s; distance=155 kB, estimate=511 kB; lsn=0/3DA7390, redo lsn=0/3DA7310
+2026-10-07 20:44:11.669 GMT [20144] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:44:11.669 GMT [20144] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:44:41.677 GMT [22280] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:44:41.677 GMT [22280] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:45:11.686 GMT [8660] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:45:11.686 GMT [8660] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:45:41.698 GMT [25000] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:45:41.698 GMT [25000] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:46:11.716 GMT [27412] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:46:11.716 GMT [27412] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:46:41.729 GMT [27604] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:46:41.729 GMT [27604] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:47:11.733 GMT [23872] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:47:11.733 GMT [23872] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:47:41.736 GMT [25336] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:47:41.736 GMT [25336] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:48:11.739 GMT [13068] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:48:11.739 GMT [13068] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:49:10.736 GMT [23756] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:49:10.736 GMT [23756] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:49:40.749 GMT [19744] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:49:40.749 GMT [19744] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:49:53.407 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:49:57.822 GMT [22092] LOG:  checkpoint complete: wrote 39 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.367 s, sync=0.034 s, total=4.416 s; sync files=31, longest=0.005 s, average=0.002 s; distance=187 kB, estimate=478 kB; lsn=0/3DD62D0, redo lsn=0/3DD6250
+2026-10-07 20:50:10.753 GMT [17648] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:50:10.753 GMT [17648] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:50:40.757 GMT [15520] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:50:40.757 GMT [15520] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:51:10.762 GMT [12036] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:51:10.762 GMT [12036] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:51:40.773 GMT [3404] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:51:40.773 GMT [3404] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:52:10.788 GMT [13416] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:52:10.788 GMT [13416] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:52:40.804 GMT [18548] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:52:40.804 GMT [18548] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:53:10.816 GMT [14720] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:53:10.816 GMT [14720] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:53:40.831 GMT [17788] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:53:40.831 GMT [17788] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:54:10.832 GMT [9296] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:54:10.832 GMT [9296] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:54:40.840 GMT [5304] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:54:40.840 GMT [5304] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:54:53.826 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:54:57.004 GMT [22092] LOG:  checkpoint complete: wrote 28 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.145 s, sync=0.018 s, total=3.179 s; sync files=19, longest=0.002 s, average=0.001 s; distance=161 kB, estimate=447 kB; lsn=0/3DFE9C8, redo lsn=0/3DFE910
+2026-10-07 20:55:10.859 GMT [21908] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:55:10.859 GMT [21908] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:55:40.872 GMT [17976] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:55:40.872 GMT [17976] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:56:10.876 GMT [25668] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:56:10.876 GMT [25668] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:56:40.883 GMT [26152] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:56:40.883 GMT [26152] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:57:10.899 GMT [9436] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:57:10.899 GMT [9436] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:57:40.911 GMT [17728] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:57:40.911 GMT [17728] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:58:10.926 GMT [13180] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:58:10.926 GMT [13180] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:58:40.934 GMT [26168] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:58:40.934 GMT [26168] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:59:10.940 GMT [804] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:59:10.940 GMT [804] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:59:40.942 GMT [9372] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 20:59:40.942 GMT [9372] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 20:59:53.009 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 20:59:55.503 GMT [22092] LOG:  checkpoint complete: wrote 22 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.460 s, sync=0.023 s, total=2.494 s; sync files=19, longest=0.005 s, average=0.002 s; distance=149 kB, estimate=417 kB; lsn=0/3E23E10, redo lsn=0/3E23DB8
+2026-10-07 21:00:10.957 GMT [21408] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:00:10.957 GMT [21408] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:00:40.970 GMT [9888] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:00:40.970 GMT [9888] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:01:10.978 GMT [13540] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:01:10.978 GMT [13540] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:01:40.989 GMT [5808] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:01:40.989 GMT [5808] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:02:10.993 GMT [3404] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:02:10.993 GMT [3404] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:02:41.007 GMT [17648] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:02:41.007 GMT [17648] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:03:11.013 GMT [8872] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:03:11.013 GMT [8872] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:03:41.020 GMT [17088] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:03:41.020 GMT [17088] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:04:11.036 GMT [23844] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:04:11.036 GMT [23844] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:04:41.046 GMT [24660] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:04:41.046 GMT [24660] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:04:53.504 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 21:04:56.911 GMT [22092] LOG:  checkpoint complete: wrote 30 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.366 s, sync=0.028 s, total=3.408 s; sync files=26, longest=0.005 s, average=0.002 s; distance=184 kB, estimate=393 kB; lsn=0/3E51FF8, redo lsn=0/3E51F78
+2026-10-07 21:05:11.055 GMT [15660] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:05:11.055 GMT [15660] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:05:41.061 GMT [22948] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:05:41.061 GMT [22948] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:06:11.073 GMT [17632] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:06:11.073 GMT [17632] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:06:41.081 GMT [17648] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:06:41.081 GMT [17648] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:07:11.096 GMT [25980] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:07:11.096 GMT [25980] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:07:41.101 GMT [10088] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:07:41.101 GMT [10088] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:08:11.110 GMT [12812] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:08:11.110 GMT [12812] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:08:41.122 GMT [8912] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:08:41.122 GMT [8912] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:09:11.126 GMT [25696] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:09:11.126 GMT [25696] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:09:41.134 GMT [26800] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:09:41.134 GMT [26800] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:09:53.920 GMT [22092] LOG:  checkpoint starting: time
+2026-10-07 21:09:56.532 GMT [22092] LOG:  checkpoint complete: wrote 23 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.574 s, sync=0.027 s, total=2.613 s; sync files=20, longest=0.005 s, average=0.002 s; distance=170 kB, estimate=371 kB; lsn=0/3E7CAB0, redo lsn=0/3E7CA30
+2026-10-07 21:10:11.136 GMT [7380] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:10:11.136 GMT [7380] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:13:03.102 GMT [17316] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:13:03.102 GMT [17316] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:13:33.114 GMT [25488] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:13:33.114 GMT [25488] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:14:03.207 GMT [17036] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:14:03.207 GMT [17036] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:14:33.210 GMT [27520] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:14:33.210 GMT [27520] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:15:03.216 GMT [9652] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:15:03.216 GMT [9652] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:15:33.229 GMT [21588] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:15:33.229 GMT [21588] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:16:03.241 GMT [18388] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:16:03.241 GMT [18388] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:16:33.252 GMT [25092] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:16:33.252 GMT [25092] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:17:03.266 GMT [10872] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:17:03.266 GMT [10872] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 21:18:25.400 GMT [14272] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 21:18:25.400 GMT [14272] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 22:08:39.038 GMT [12020] ERROR:  relation "socket_io_channels" does not exist at character 13
+2026-10-07 22:08:39.038 GMT [12020] STATEMENT:  DELETE FROM socket_io_channels WHERE created_at < now() - interval '30000 milliseconds'
+2026-10-07 22:08:40.347 GMT [19332] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.347 GMT [24476] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.348 GMT [12772] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.349 GMT [13000] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.349 GMT [19216] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.350 GMT [19160] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.350 GMT [4800] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.350 GMT [18596] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.350 GMT [7436] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.352 GMT [17440] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.353 GMT [12188] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.353 GMT [19208] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.353 GMT [6608] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.353 GMT [1620] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.353 GMT [12668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.353 GMT [16544] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.354 GMT [18360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:08:40.354 GMT [21872] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-10-07 22:43:54.209 GMT [22092] LOG:  checkpoint starting: time
+2026-10-08 00:03:33.118 GMT [22092] LOG:  checkpoint complete: wrote 41 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4778.823 s, sync=0.045 s, total=4778.910 s; sync files=33, longest=0.009 s, average=0.002 s; distance=247 kB, estimate=359 kB; lsn=0/3EBA8D8, redo lsn=0/3EBA880
+2026-10-08 00:04:30.230 GMT [27480] LOG:  background writer process (PID 21360) was terminated by exception 0x40010004
+2026-10-08 00:04:30.230 GMT [27480] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-08 00:04:30.230 GMT [27480] LOG:  terminating any other active server processes
+2026-10-08 00:04:30.260 GMT [27480] LOG:  all server processes terminated; reinitializing
+2026-10-08 00:04:30.406 GMT [27480] LOG:  startup process (PID 6824) was terminated by exception 0xC000026B
+2026-10-08 00:04:30.406 GMT [27480] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-10-08 00:04:30.406 GMT [27480] LOG:  aborting startup due to startup process failure
+2026-10-08 00:04:30.409 GMT [27480] LOG:  database system is shut down
