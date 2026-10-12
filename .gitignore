@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+*.log
+
+# Base de datos local de desarrollo (cluster propio, no versionar)
+.devdb/
+
+# Archivos generados
+src/generated/
+storage/
+*.tsbuildinfo
